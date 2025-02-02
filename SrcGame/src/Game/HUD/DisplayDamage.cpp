@@ -73,7 +73,22 @@ void cSHOW_DMG::AddDef(DWORD Serial, Type Type, int value)
 			break;
 		case Type::Damage:
 		case Type::CriticalDamage:
-			wsprintf(newDmg->Text, "%d", value);
+			//Logica do Exp por Ataque
+			INT64 exp64 = CodeXorCharInfo_Exp();
+			int mlevel = CHAR_LEVEL_MAX;
+
+			if (exp64 < ExpLevelTable[mlevel])
+			{
+				INT64 exp = value * 1000;
+				exp64 += exp;
+				wsprintf(newDmg->Text, "Exp %d", value*1000);
+				SetExp64(&lpCurPlayer->smCharInfo, exp64);
+				CodeXorCharInfo_Exp();
+				ReformCharForm();
+				char szTemp[32] = { 0 };
+				NumLineComa64(exp, szTemp);
+				CHATGAMEHANDLE->AddChatBoxTextEx(EChatColor::CHATCOLOR_Notice, "> Você Ganhou %s de experiência!", szTemp);
+			}
 			break;
 		}
 
