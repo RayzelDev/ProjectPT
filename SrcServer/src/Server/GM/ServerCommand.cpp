@@ -6,11 +6,13 @@
 #include <Party/CPartyHandler.h>
 #include <zlib.h>
 #include <Database/SQLConnection.h>
+#include <SrcServer/onserver.h>
 
 extern Events::Questions* QuestionEvent;
 extern char* rsGetWord(char* q, char* p);
 extern void LeIniStr(char* Section, char* Key, char* szFileIni, char* Var1);
 
+extern int	rsDeleteInvenItem(rsPLAYINFO* lpPlayInfo, DWORD dwCode, DWORD dwHead, DWORD dwChkSum);
 extern int CreateCommandItem(rsPLAYINFO* lpPlayInfo, rsPLAYINFO* lpPlayInfo2, char* szItem);
 extern int srSetItemFromCode(psITEM* lpsItem, char* szCoed);
 extern int	rsRegist_ItemSecCode(rsPLAYINFO* lpPlayInfo, TRANS_ITEMINFO* lpTransItemInfo, int NewItem);
@@ -193,6 +195,44 @@ BOOL CServerCommand::OnPlayerCommand(rsPLAYINFO* pcUser, char* pszBuff)
 		if (pcUser && pcUser->vipLevel > 0)
 		{
 			Vip::GetInstance()->OpenNpc(pcUser, 1);
+		}
+	}
+	else if (ChatCommand("/craft_espada100", pszBuff)) // CRAFTS PARA TESTE
+	{
+		//Verificar se tem 5 Celestos, senao avisar que falta materiais para o craft
+		int cnt;
+		int qtdCelestos = 0;
+		int deletadas = 0;
+
+		for (cnt = 0; cnt < INVEN_ITEM_INFO_MAX; cnt++)
+		{
+			if (pcUser->InvenItemInfo[cnt].dwCode == (sinOS1 | sin09))
+			{
+				qtdCelestos++;
+			}
+		}
+
+		if (qtdCelestos >= 5)
+		{
+			//Fazer uma espada 100a
+			CreateCommandItem(pcUser, pcUser, "WS224");
+			SERVERCHAT->SendChatEx(pcUser, CHATCOLOR_Blue, "> Espada Prateada Construída com Sucesso!");
+
+			//Deleta 5 Celestos
+			for (cnt = 0; cnt < INVEN_ITEM_INFO_MAX; cnt++)
+			{
+				if (pcUser->InvenItemInfo[cnt].dwCode == (sinOS1 | sin09))
+				{
+					if (deletadas < 5)
+					{
+						rsDeleteInvenItem(pcUser, pcUser->InvenItemInfo[cnt].dwCode, pcUser->InvenItemInfo[cnt].dwKey, pcUser->InvenItemInfo[cnt].dwSum);
+					}
+				}
+			}
+		}
+		else
+		{
+			SERVERCHAT->SendChatEx(pcUser, CHATCOLOR_Blue, "> Materiais insuficientes!");
 		}
 	}
 
