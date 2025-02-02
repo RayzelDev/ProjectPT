@@ -16,7 +16,7 @@
 #define T_COIN_TEXT_POSI		8
 
 #define MAX_SHELTOM				15
-#define MAX_AGING				20 // Nível do Aging aqui máximo
+#define MAX_AGING				30 // Nível do Aging aqui máximo
 #define MAX_RUNE				14
 #define MAX_RECIPE_KIND			11
 #define MAX_RECIPE_ITEM			60
@@ -652,8 +652,8 @@ extern cAGING	cAging;		  //¿¡ÀÌÂ¡
 extern sAGINGITEM sAgingItem;
 extern sAGINGITEM_INFO sAgingItem_Info[MAX_AGINGITEM_INFO];
 
-extern int AgingLevelAttack[20];
-extern int AgingLevelCritical[20];
+extern int AgingLevelAttack[MAX_AGING];
+extern int AgingLevelCritical[MAX_AGING];
 
 extern char szAgingItemBuff[128];
 extern POINT CraftItemMessageSize;

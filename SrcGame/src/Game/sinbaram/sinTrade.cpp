@@ -191,22 +191,22 @@ int BaseX = (WinSizeX - 260) / 2;
 int BaseY = (WinSizeY - 161) / 2;
 
 // Aging System
-int AgingLevelAttack[MAX_AGING] = { 200,400,800,1500,3000,5000,10000,15000,25000,50000,10,100,10,10,10,10,10,10,10,10 };
+int AgingLevelAttack[MAX_AGING] = { 200,400,800,1500,3000,5000,10000,15000,25000,50000,10,100,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10 };
 
-int AgingLevelCritical[MAX_AGING] = { 40,80,160,300,600,1000,2000,3000,5000,10000,10,100,10,10,10,10,10,10,10,10 };
+int AgingLevelCritical[MAX_AGING] = { 40,80,160,300,600,1000,2000,3000,5000,10000,10,100,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10 };
 
-int AgingLevelBlock[MAX_AGING] = { 40,80,160,300,600,1000,2000,3000,5000,10000,10,100,10,10,10,10,10,10,10,10 };
+int AgingLevelBlock[MAX_AGING] = { 40,80,160,300,600,1000,2000,3000,5000,10000,10,100,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10 };
 
-int AgingLevelHit[MAX_AGING] = { 100,200,300,750,1500,2500,5000,7500,12500,25000,10,100,10,10,10,10,10,10,10,10 };
+int AgingLevelHit[MAX_AGING] = { 100,200,300,750,1500,2500,5000,7500,12500,25000,10,100,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10 };
 
 //Falha do aging
-int AgingOkPercent[MAX_AGING] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 18, 28, 36, 44, 52, 58, 67, 75, 82, 88 };
-int AgingStoneAgingOkPercent[MAX_AGING] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 12, 20, 28, 36, 44, 52, 60, 68 };
+int AgingOkPercent[MAX_AGING] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 11, 12, 13, 14, 15, 16, 16, 18, 19, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20 };
+int AgingStoneAgingOkPercent[MAX_AGING] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 12, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20, 20 };
 
-int SuperAgingStoneAgingFailPercent[MAX_AGING] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 100};
-int SuperAgingStone1_5AgingFailPercent[MAX_AGING] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 100};
+int SuperAgingStoneAgingFailPercent[MAX_AGING] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50 , 50 , 50 , 50 , 50 , 50 , 50 , 50 , 50 , 50 };
+int SuperAgingStone1_5AgingFailPercent[MAX_AGING] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50 , 50 , 50 , 50 , 50 , 50 , 50 , 50 , 50 , 50 };
 
-int chanceQuebra[MAX_AGING] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44 };
+int chanceQuebra[MAX_AGING] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18 };
 
 int AgingLevelSheltom[MAX_AGING][12] = {
 	{9,9,0,0,0,0,0,0,0,0,0,0},
@@ -226,11 +226,21 @@ int AgingLevelSheltom[MAX_AGING][12] = {
 	{9,9,9,9,9,0,0,0,0,0,0,0},
 	{9,9,9,9,9,0,0,0,0,0,0,0},
 	{9,9,9,9,9,0,0,0,0,0,0,0},
+	{9,9,9,9,9,0,0,0,0,0,0,0},
+	{9,9,9,9,9,0,0,0,0,0,0,0},
+	{9,9,9,9,9,9,0,0,0,0,0,0},
 
-	{9,9,9,9,9,0,0,0,0,0,0,0},
-	{9,9,9,9,9,0,0,0,0,0,0,0},
-	{9,9,9,9,9,9,0,0,0,0,0,0},
-	{9,9,9,9,9,9,0,0,0,0,0,0},
+	{9,9,9,9,9,9,9,0,0,0,0,0},
+	{9,9,9,9,9,9,9,0,0,0,0,0},
+	{9,9,9,9,9,9,9,0,0,0,0,0},
+	{9,9,9,9,9,9,9,0,0,0,0,0},
+	{9,9,9,9,9,9,9,0,0,0,0,0},
+	{9,9,9,9,9,9,9,9,0,0,0,0},
+	{9,9,9,9,9,9,9,9,0,0,0,0},
+	{9,9,9,9,9,9,9,9,0,0,0,0},
+	{9,9,9,9,9,9,9,9,0,0,0,0},
+	{9,9,9,9,9,9,9,9,0,0,0,0},
+	{9,9,9,9,9,9,9,9,0,0,0,0},
 };
 
 
@@ -252,7 +262,9 @@ int AgingSheltomCnt2 = 0;
 int AgingLevelMoney[MAX_AGING] = { 1000 ^ SIN_AGING_MASK,2000 ^ SIN_AGING_MASK,3000 ^ SIN_AGING_MASK,4000 ^ SIN_AGING_MASK,5000 ^ SIN_AGING_MASK,
 							6000 ^ SIN_AGING_MASK,7000 ^ SIN_AGING_MASK,8000 ^ SIN_AGING_MASK,9000 ^ SIN_AGING_MASK,10000 ^ SIN_AGING_MASK,
 							11000 ^ SIN_AGING_MASK,12000 ^ SIN_AGING_MASK,13000 ^ SIN_AGING_MASK,14000 ^ SIN_AGING_MASK,15000 ^ SIN_AGING_MASK,
-							16000 ^ SIN_AGING_MASK,17000 ^ SIN_AGING_MASK,18000 ^ SIN_AGING_MASK,19000 ^ SIN_AGING_MASK,20000 ^ SIN_AGING_MASK };
+							16000 ^ SIN_AGING_MASK,17000 ^ SIN_AGING_MASK,18000 ^ SIN_AGING_MASK,19000 ^ SIN_AGING_MASK,20000 ^ SIN_AGING_MASK
+							,20000 ^ SIN_AGING_MASK ,20000 ^ SIN_AGING_MASK ,20000 ^ SIN_AGING_MASK ,20000 ^ SIN_AGING_MASK ,20000 ^ SIN_AGING_MASK 
+							,20000 ^ SIN_AGING_MASK ,20000 ^ SIN_AGING_MASK ,20000 ^ SIN_AGING_MASK ,20000 ^ SIN_AGING_MASK ,20000 ^ SIN_AGING_MASK };
 
 POINT AgingLevelSheltomXY[4][3] = {
 	{{218,193 + sinInterHeight2}			,{218 + 22,193 + sinInterHeight2}		  ,{218 + 22 + 22,193 + sinInterHeight2}},
