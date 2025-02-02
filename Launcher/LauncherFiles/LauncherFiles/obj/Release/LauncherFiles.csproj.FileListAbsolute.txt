@@ -1,0 +1,11 @@
+C:\Users\PC\source\repos\LauncherFiles\LauncherFiles\bin\Release\LauncherFiles.exe.config
+C:\Users\PC\source\repos\LauncherFiles\LauncherFiles\bin\Release\LauncherFiles.exe
+C:\Users\PC\source\repos\LauncherFiles\LauncherFiles\bin\Release\LauncherFiles.pdb
+C:\Users\PC\source\repos\LauncherFiles\LauncherFiles\bin\Release\Newtonsoft.Json.xml
+C:\Users\PC\source\repos\LauncherFiles\LauncherFiles\obj\Release\LauncherFiles.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\LauncherFiles\LauncherFiles\obj\Release\LauncherFiles.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\LauncherFiles\LauncherFiles\obj\Release\LauncherFiles.csproj.Fody.CopyLocal.cache
+C:\Users\PC\source\repos\LauncherFiles\LauncherFiles\obj\Release\LauncherFiles.csproj.CopyComplete
+C:\Users\PC\source\repos\LauncherFiles\LauncherFiles\obj\Release\LauncherFiles.exe
+C:\Users\PC\source\repos\LauncherFiles\LauncherFiles\obj\Release\LauncherFiles.pdb
+C:\Users\PC\source\repos\LauncherFiles\LauncherFiles\bin\Release\Crc32C.NET.xml

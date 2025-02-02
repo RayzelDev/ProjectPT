@@ -1,0 +1,55 @@
+C:\Users\shado\OneDrive\Documentos\launcher2\grandchase.exe.config
+C:\Users\shado\OneDrive\Documentos\launcher2\grandchase.exe
+C:\Users\shado\OneDrive\Documentos\launcher2\grandchase.pdb
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\GOLauncher.csprojAssemblyReference.cache
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\Windows\Buttons.baml
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\Windows\Launcher.baml
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\Windows\Repair.baml
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\Windows\Splash.baml
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\Windows\App.baml
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\Windows\Launcher.g.cs
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\Windows\Repair.g.cs
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\Windows\Splash.g.cs
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\Windows\App.g.cs
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\grandchase_MarkupCompile.cache
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\grandchase.g.resources
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\GOLauncher.Properties.Resources.resources
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\GOLauncher.csproj.GenerateResource.cache
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\GOLauncher.csproj.CoreCompileInputs.cache
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\grandchase.exe
+C:\Users\shado\OneDrive\Documentos\Launcher\Launcher\GOLauncher\GOLauncher\obj\Debug\grandchase.pdb
+C:\Users\launcher2\grandchase.exe.config
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\GOLauncher.csprojAssemblyReference.cache
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\Windows\Buttons.baml
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\Windows\Launcher.baml
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\Windows\Repair.baml
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\Windows\Splash.baml
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\Windows\App.baml
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\Windows\Launcher.g.cs
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\Windows\Repair.g.cs
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\Windows\Splash.g.cs
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\Windows\App.g.cs
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\grandchase_MarkupCompile.cache
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\grandchase.g.resources
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\GOLauncher.Properties.Resources.resources
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\GOLauncher.csproj.GenerateResource.cache
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\GOLauncher.csproj.CoreCompileInputs.cache
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\grandchase.exe
+C:\Users\ewert\Downloads\GOLauncher\GOLauncher\obj\Debug\grandchase.pdb
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\GOLauncher.csprojAssemblyReference.cache
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\Windows\Buttons.baml
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\Windows\Launcher.baml
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\Windows\Repair.baml
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\Windows\Splash.baml
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\Windows\App.baml
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\Windows\Launcher.g.cs
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\Windows\Repair.g.cs
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\Windows\Splash.g.cs
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\Windows\App.g.cs
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\grandchase_MarkupCompile.cache
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\grandchase.g.resources
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\GOLauncher.Properties.Resources.resources
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\GOLauncher.csproj.GenerateResource.cache
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\GOLauncher.csproj.CoreCompileInputs.cache
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\grandchase.exe
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Debug\grandchase.pdb

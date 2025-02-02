@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<ArrayOfArquivo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Arquivo>
+    <FileID>1</FileID>
+    <FileHash>f5418bd4c950fa3f5588ba6bfc6b850c</FileHash>
+    <FilePath>LauncherFiles.exe.config</FilePath>
+  </Arquivo>
+  <Arquivo>
+    <FileID>2</FileID>
+    <FileHash>5540f61f13e37e51c522f58ea44735bd</FileHash>
+    <FilePath>LauncherFiles.pdb</FilePath>
+  </Arquivo>
+  <Arquivo>
+    <FileID>3</FileID>
+    <FileHash>5a968502b84a268ca84018f1a9f6bb59</FileHash>
+    <FilePath>LauncherFiles.vshost.exe</FilePath>
+  </Arquivo>
+  <Arquivo>
+    <FileID>4</FileID>
+    <FileHash>f5418bd4c950fa3f5588ba6bfc6b850c</FileHash>
+    <FilePath>LauncherFiles.vshost.exe.config</FilePath>
+  </Arquivo>
+  <Arquivo>
+    <FileID>5</FileID>
+    <FileHash>13c5bac1f09aadf2c1f85e0729f69236</FileHash>
+    <FilePath>LauncherFiles.vshost.exe.manifest</FilePath>
+  </Arquivo>
+</ArrayOfArquivo>

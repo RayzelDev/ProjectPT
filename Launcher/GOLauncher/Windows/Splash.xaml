@@ -1,0 +1,18 @@
+﻿<Window x:Class="GCLauncher.Splash"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        OpacityMask="White" 
+        WindowStyle="None" 
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        Title="Tela" Height="136" Width="235" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,-13">
+        <Image Name="LogoImg" HorizontalAlignment="Left" Height="150" Width="240" VerticalAlignment="Top" Source="/images/logo.png" x:FieldModifier="public" Margin="38,-16,0,0"/>
+        <ProgressBar HorizontalAlignment="Left" Height="15" VerticalAlignment="Top" Width="235" x:Name="LauncherBarTotal" BorderBrush="{x:Null}" Value="80" Margin="0,121,0,0" Style="{StaticResource Bar3}"/>
+        <TextBlock TextAlignment="Center" HorizontalAlignment="Center" Margin="0,120,0,0" TextWrapping="Wrap" Text="Verificando Arquivos" VerticalAlignment="Top" Name="splashText" Foreground="white" Width="235" x:FieldModifier="public" FontSize="9pt"/>
+    </Grid>
+</Window>

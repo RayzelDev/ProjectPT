@@ -1,1 +1,2 @@
 D:\ProjectPT\Repo\bin\game\Game.exe
+D:\ProjectPT\bin\game\Game.exe

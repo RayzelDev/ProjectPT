@@ -1,0 +1,117 @@
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\bin\Release\grandchase.exe.config
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\bin\Release\grandchase.exe
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\bin\Release\grandchase.pdb
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Release\Windows\Buttons.baml
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Release\Windows\Launcher.baml
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Release\Windows\Repair.baml
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Release\Windows\Splash.baml
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Release\Windows\App.baml
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Release\Windows\Launcher.g.cs
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Release\Windows\Repair.g.cs
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Release\Windows\Splash.g.cs
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Release\Windows\App.g.cs
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Release\grandchase_MarkupCompile.cache
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Release\grandchase.g.resources
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Release\GOLauncher.Properties.Resources.resources
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Release\GOLauncher.csproj.GenerateResource.cache
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Release\GOLauncher.csproj.CoreCompileInputs.cache
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Release\grandchase.exe
+C:\Users\Johnn\Desktop\launcher deku\GOLauncher\obj\Release\grandchase.pdb
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\bin\Release\grandchase.exe.config
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\bin\Release\grandchase.exe
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\bin\Release\grandchase.pdb
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\obj\Release\Windows\Buttons.baml
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\obj\Release\Windows\Launcher.baml
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\obj\Release\Windows\Repair.baml
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\obj\Release\Windows\Splash.baml
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\obj\Release\Windows\App.baml
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\obj\Release\Windows\Launcher.g.cs
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\obj\Release\Windows\Repair.g.cs
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\obj\Release\Windows\Splash.g.cs
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\obj\Release\Windows\App.g.cs
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\obj\Release\grandchase_MarkupCompile.cache
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\obj\Release\grandchase.g.resources
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\obj\Release\GOLauncher.Properties.Resources.resources
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\obj\Release\GOLauncher.csproj.GenerateResource.cache
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\obj\Release\GOLauncher.csproj.CoreCompileInputs.cache
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\obj\Release\grandchase.exe
+C:\Users\Jonathan\Desktop\GCR\GOLauncher\obj\Release\grandchase.pdb
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\bin\Release\grandchase.exe.config
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\bin\Release\grandchase.exe
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\bin\Release\grandchase.pdb
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Buttons.baml
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Launcher.baml
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Repair.baml
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Splash.baml
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\App.baml
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Launcher.g.cs
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Repair.g.cs
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Splash.g.cs
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\App.g.cs
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\grandchase_MarkupCompile.cache
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\grandchase.g.resources
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\GOLauncher.Properties.Resources.resources
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\GOLauncher.csproj.GenerateResource.cache
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\GOLauncher.csproj.CoreCompileInputs.cache
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\grandchase.exe
+D:\Users\Jonathan\Desktop\Area de trabalho\Arquivos UnderWorldChase\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\grandchase.pdb
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\bin\Release\grandchase.exe.config
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\bin\Release\grandchase.exe
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\bin\Release\grandchase.pdb
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Buttons.baml
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Launcher.baml
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Repair.baml
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Splash.baml
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\App.baml
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Launcher.g.cs
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Repair.g.cs
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Splash.g.cs
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\App.g.cs
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\grandchase_MarkupCompile.cache
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\grandchase.g.resources
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\GOLauncher.Properties.Resources.resources
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\GOLauncher.csproj.GenerateResource.cache
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\GOLauncher.csproj.CoreCompileInputs.cache
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\grandchase.exe
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\grandchase.pdb
+G:\Soucer's\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\GOLauncher.csprojAssemblyReference.cache
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\bin\Release\Launcher.exe.config
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\bin\Release\Launcher.exe
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\bin\Release\Launcher.pdb
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\GOLauncher.csproj.AssemblyReference.cache
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Buttons.baml
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Launcher.baml
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Repair.baml
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Splash.baml
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\App.baml
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Launcher.g.cs
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Repair.g.cs
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\Splash.g.cs
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Windows\App.g.cs
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Launcher_MarkupCompile.cache
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Launcher.g.resources
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\GOLauncher.Properties.Resources.resources
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\GOLauncher.csproj.GenerateResource.cache
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\GOLauncher.csproj.CoreCompileInputs.cache
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Launcher.exe
+C:\Users\Viole\Desktop\Soucer Launcher Underworld Chase\Soucer Launcher Underworld Chase\GOLauncher\obj\Release\Launcher.pdb
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\bin\Release\Launcher.exe.config
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\bin\Release\Launcher.exe
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\bin\Release\Launcher.pdb
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\GOLauncher.csproj.AssemblyReference.cache
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\Windows\Buttons.baml
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\Windows\Launcher.baml
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\Windows\Repair.baml
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\Windows\Splash.baml
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\Windows\App.baml
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\Windows\Launcher.g.cs
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\Windows\Repair.g.cs
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\Windows\Splash.g.cs
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\Windows\App.g.cs
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\Launcher_MarkupCompile.cache
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\Launcher.g.resources
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\GOLauncher.Properties.Resources.resources
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\GOLauncher.csproj.GenerateResource.cache
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\GOLauncher.csproj.CoreCompileInputs.cache
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\Launcher.exe
+E:\!Coisas de PRISTON\!Servidor NerverlandPT\srcnerverlandpt\Launcher\GOLauncher\obj\Release\Launcher.pdb
