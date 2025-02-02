@@ -56,7 +56,7 @@ BOOL CLoginScreen::Init()
 
 	uiPosition.iY = 5;
 	uiPosition.iX = 165;
-	auto babelCheckBox = this->createCheckbox(uiPosition, checkboxData((int)CHECKBOX_ID::WORLD_ID_WORLD, FALSE, "PrivacyPT", this->serverSelector2));
+	auto babelCheckBox = this->createCheckbox(uiPosition, checkboxData((int)CHECKBOX_ID::WORLD_ID_WORLD, FALSE, "ProjectPT", this->serverSelector2));
 	uiPosition.iY += 20;
 
 	this->serverSelector2->GetElement<UI::CheckBox>((int)CHECKBOX_ID::WORLD_ID_WORLD)->SetCheck(TRUE);
