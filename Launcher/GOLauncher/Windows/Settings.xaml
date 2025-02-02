@@ -1,0 +1,54 @@
+﻿<Window x:Class="GCLauncher.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        AllowsTransparency="True"
+        OpacityMask="White" 
+        WindowStyle="None" 
+        Background="Transparent"
+        WindowStartupLocation="CenterScreen"
+        Title="Settings" Height="599" Width="568" ResizeMode="NoResize">
+    <Grid>
+        <Image HorizontalAlignment="Left" VerticalAlignment="Top" Height="599" Width="599" Source="/images/Secondary_BG.png" Margin="0,0,0,0"/>
+        <Rectangle Width="328" Height="328" Fill="#141414" RadiusX="4" RadiusY="4" Margin="139,243,101,28"/>
+        <ProgressBar IsEnabled="False" HorizontalAlignment="Left" Height="15" VerticalAlignment="Top" Width="295" x:Name="DllBarTotal" BorderBrush="{x:Null}" Value="80" Margin="153,539,0,0" Style="{StaticResource Bar3}"/>
+        <TextBlock TextAlignment="Center" HorizontalAlignment="Left" Margin="139,261,0,0" TextWrapping="Wrap" Text="언어 선택기" VerticalAlignment="Top" Name="LangText" Foreground="WhiteSmoke" Width="328" FontSize="20pt"/>
+        <Image HorizontalAlignment="Left" Height="19" VerticalAlignment="Top" Width="19" Source="/images/close.png" Margin="449,242,0,0" Name="cls" RenderTransformOrigin="14.375,5.667"/>
+        <Button Content="clbs" Opacity="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="449,242,0,0" Width="20" Height="19" Click="ClickSettings" Name="clbs"/>
+        <Button IsEnabled="False" HorizontalAlignment="Left" Margin="153,427,0,0" VerticalAlignment="Top" Width="295" Height="94" x:Name="Button_Text_1" Click="ClickSettings" Style="{StaticResource Button1}">
+            <TextBlock Text="WIN10 용 D3D9.DLL 수정" FontSize="15pt" Name="ButtonResolve"/>
+        </Button>
+        <!-- Language Selector -->
+        <RadioButton Name="br_lang" Checked="ChangeLanguage" Height="50" Width="50" Margin="172,338,346,211" IsChecked="false" GroupName="LangChangers">
+            <Ellipse Width="50" Height="50" Margin="-28,0,0,0">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/images/lang/0.png" />
+                </Ellipse.Fill>
+            </Ellipse>
+        </RadioButton>
+        <RadioButton Name="us_lang" Checked="ChangeLanguage" Height="50" Width="50" Margin="250,338,268,211" IsChecked="false" GroupName="LangChangers">
+            <Ellipse Width="50" Height="50" Margin="-28,0,0,0">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/images/lang/1.png" />
+                </Ellipse.Fill>
+            </Ellipse>
+        </RadioButton>
+        <RadioButton Name="kr_lang" Checked="ChangeLanguage" Height="50" Width="50" Margin="326,338,192,211" IsChecked="false" GroupName="LangChangers">
+            <Ellipse Width="50" Height="50" Margin="-28,0,0,0">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/images/lang/2.png" />
+                </Ellipse.Fill>
+            </Ellipse>
+        </RadioButton>
+        <RadioButton Name="es_lang" Checked="ChangeLanguage" Height="50" Width="50" Margin="398,338,120,211" IsChecked="false" GroupName="LangChangers">
+            <Ellipse Width="50" Height="50" Margin="-28,0,0,0">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/images/lang/3.png" />
+                </Ellipse.Fill>
+            </Ellipse>
+        </RadioButton>
+        <!-- Language Selector -->
+    </Grid>
+</Window>

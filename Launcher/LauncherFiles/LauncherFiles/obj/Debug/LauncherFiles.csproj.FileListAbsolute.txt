@@ -1,0 +1,9 @@
+C:\Users\Impy\Documents\Visual Studio 2015\Projects\LauncherFiles\LauncherFiles\bin\Debug\LauncherFiles.exe.config
+C:\Users\Impy\Documents\Visual Studio 2015\Projects\LauncherFiles\LauncherFiles\obj\Debug\LauncherFiles.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Downloads\Download 2\Compressed\Launcher GO\Launcher\LauncherFiles\LauncherFiles\bin\Debug\LauncherFiles.exe.config
+C:\Users\Jonathan\Downloads\Download 2\Compressed\Launcher GO\Launcher\LauncherFiles\LauncherFiles\bin\Debug\LauncherFiles.exe
+C:\Users\Jonathan\Downloads\Download 2\Compressed\Launcher GO\Launcher\LauncherFiles\LauncherFiles\bin\Debug\LauncherFiles.pdb
+C:\Users\Jonathan\Downloads\Download 2\Compressed\Launcher GO\Launcher\LauncherFiles\LauncherFiles\obj\Debug\LauncherFiles.csprojAssemblyReference.cache
+C:\Users\Jonathan\Downloads\Download 2\Compressed\Launcher GO\Launcher\LauncherFiles\LauncherFiles\obj\Debug\LauncherFiles.csproj.CoreCompileInputs.cache
+C:\Users\Jonathan\Downloads\Download 2\Compressed\Launcher GO\Launcher\LauncherFiles\LauncherFiles\obj\Debug\LauncherFiles.exe
+C:\Users\Jonathan\Downloads\Download 2\Compressed\Launcher GO\Launcher\LauncherFiles\LauncherFiles\obj\Debug\LauncherFiles.pdb
