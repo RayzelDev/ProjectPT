@@ -12,7 +12,7 @@ extern Events::Questions* QuestionEvent;
 extern char* rsGetWord(char* q, char* p);
 extern void LeIniStr(char* Section, char* Key, char* szFileIni, char* Var1);
 
-extern int	rsDeleteInvenItem(rsPLAYINFO* lpPlayInfo, DWORD dwCode, DWORD dwHead, DWORD dwChkSum);
+int	rsDeleteClientItem(rsPLAYINFO* lpPlayInfo, DWORD dwCode, DWORD dwHead, DWORD dwChkSum);
 extern int CreateCommandItem(rsPLAYINFO* lpPlayInfo, rsPLAYINFO* lpPlayInfo2, char* szItem);
 extern int srSetItemFromCode(psITEM* lpsItem, char* szCoed);
 extern int	rsRegist_ItemSecCode(rsPLAYINFO* lpPlayInfo, TRANS_ITEMINFO* lpTransItemInfo, int NewItem);
@@ -199,18 +199,30 @@ BOOL CServerCommand::OnPlayerCommand(rsPLAYINFO* pcUser, char* pszBuff)
 	}
 	else if (ChatCommand("/craft_espada100", pszBuff)) // CRAFTS PARA TESTE
 	{
-		//Verificar se tem 5 Celestos, senao avisar que falta materiais para o craft
-		int cnt;
+		//Verificar se tem 5 Celestos, se n tiver avisa que falta materiais para o craft
 		int qtdCelestos = 0;
 		int deletadas = 0;
 
-		for (cnt = 0; cnt < INVEN_ITEM_INFO_MAX; cnt++)
+		//Percorre o bau para achar as celestos
+		for (int cnt = 0; cnt < INVEN_ITEM_INFO_MAX; cnt++)
 		{
-			if (pcUser->InvenItemInfo[cnt].dwCode == (sinOS1 | sin09))
+			if (pcUser &&  pcUser->WareHouseItemInfo[cnt].dwCode == (sinOS1 | sin09))
 			{
-				qtdCelestos++;
+				qtdCelestos--;
+				//SERVERCHAT->SendChatEx(pcUser, CHATCOLOR_Blue, "> Achou Celesto no Bau");
 			}
 		}
+
+		//Percorre o inventario para achar as celestos
+		for (int cnt = 0; cnt < INVEN_ITEM_INFO_MAX; cnt++)
+		{
+			if (pcUser && pcUser->InvenItemInfo[cnt].dwCode == (sinOS1 | sin09))
+			{
+				qtdCelestos++;
+				//SERVERCHAT->SendChatEx(pcUser, CHATCOLOR_Blue, "> Achou Celesto no Char");
+			}
+		}
+		
 
 		if (qtdCelestos >= 5)
 		{
@@ -218,14 +230,19 @@ BOOL CServerCommand::OnPlayerCommand(rsPLAYINFO* pcUser, char* pszBuff)
 			CreateCommandItem(pcUser, pcUser, "WS224");
 			SERVERCHAT->SendChatEx(pcUser, CHATCOLOR_Blue, "> Espada Prateada Construída com Sucesso!");
 
-			//Deleta 5 Celestos
-			for (cnt = 0; cnt < INVEN_ITEM_INFO_MAX; cnt++)
+			//Deleta 5 Celestos no Inventario
+			for (int cnt = 0; cnt < INVEN_ITEM_INFO_MAX; cnt++)
 			{
 				if (pcUser->InvenItemInfo[cnt].dwCode == (sinOS1 | sin09))
 				{
 					if (deletadas < 5)
 					{
-						rsDeleteInvenItem(pcUser, pcUser->InvenItemInfo[cnt].dwCode, pcUser->InvenItemInfo[cnt].dwKey, pcUser->InvenItemInfo[cnt].dwSum);
+						rsDeleteClientItem(pcUser, pcUser->InvenItemInfo[cnt].dwCode, pcUser->InvenItemInfo[cnt].dwKey, pcUser->InvenItemInfo[cnt].dwSum);
+						pcUser->InvenItemInfo[cnt].dwCode = 0;
+						pcUser->InvenItemInfo[cnt].dwKey = 0;
+						pcUser->InvenItemInfo[cnt].dwSum = 0;
+						//SERVERCHAT->SendChatEx(pcUser, CHATCOLOR_Blue, "> Deletou Celesto Char");
+						deletadas++;
 					}
 				}
 			}
