@@ -260,7 +260,7 @@ void CServerCommand::OnGameMasterAdminCommand(rsPLAYINFO* pcUser, char* pszBuff)
 
 			int NivelAging = atoi(szCommandParam2);
 
-			if (NivelAging <= 22)
+			if (NivelAging <= 30)
 			{
 				psITEM* lpsItem;
 				lpsItem = new psITEM;
@@ -282,7 +282,7 @@ void CServerCommand::OnGameMasterAdminCommand(rsPLAYINFO* pcUser, char* pszBuff)
 			}
 			else
 			{
-				SERVERCHAT->SendChat(pcUser, CHATCOLOR_Error, "> Nível máximo = +22!");
+				SERVERCHAT->SendChat(pcUser, CHATCOLOR_Error, "> Nível máximo = +30!");
 			}
 		}
 		else
