@@ -52,7 +52,7 @@
     <OutDir>..\..\bin\server</OutDir>
     <IntDir>..\..\bin\server</IntDir>
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>E:\!Coisas de PRISTON\!PT melhorias\Libs\InternalLib\KNCSDK_2015\Include\Serializer\zlib;D:\!PT melhorias\Shared\zlib\Lib;$(Lib)/zLib/lib;$(SolutionDir)\Library;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(ProjectPT)/InternalLib\KNCSDK_2015\Include\Serializer\zlib;$(Lib)/zLib/lib;$(SolutionDir)\Library;$(LibraryPath)</LibraryPath>
     <IncludePath>$(ProjectPT)/ExternalLib\KOGPatcher\libcurl\include\curl;$(ProjectPT)/InternalLib\KNCSDK_2015\Include\Serializer\zlib;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)\Libs\ExternalLib\DXSDK\Include;$(SolutionDir)\Libs\InternalLib\KNCSDK_2015\Include;$(SolutionDir)\Libs\ExternalLib\Log4cxx\apache-log4cxx-0.10.0-vs2015\src\main\include;$(SolutionDir)\Libs\ExternalLib\IntelTBB\tbb2019_20190410oss\include;$(ProjectPT)/ExternalLib\Boost\boost_1_67_0;$(SolutionDir)\Libs\ExternalLib\Boost\boost_1_67_0;$(SolutionDir)\Libs\InternalLib\GCDiscordLib\include;$(SolutionDir)\Libs\ExternalLib\luajitLib</IncludePath>
     <TargetName>Server</TargetName>
   </PropertyGroup>

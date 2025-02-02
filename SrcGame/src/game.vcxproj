@@ -76,7 +76,7 @@
     <IncludePath>$(ProjectPT)/InternalLib\KNCSDK_2015\Include\Serializer\zlib;$(ProjectPT)/ExternalLib\KOGPatcher\libcurl\include\;$(ProjectPT)/ExternalLib\Boost\boost_1_67_0;$(ProjectPT)/ExternalLib\DXSDK\Include;$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)\Libs\ExternalLib\DXSDK\Include;$(SolutionDir)\Libs\InternalLib\KNCSDK_2015\Include;$(SolutionDir)\Libs\ExternalLib\Log4cxx\apache-log4cxx-0.10.0-vs2015\src\main\include;$(SolutionDir)\Libs\ExternalLib\IntelTBB\tbb2019_20190410oss\include;$(SolutionDir)\Libs\ExternalLib\Boost\boost_1_67_0;$(SolutionDir)\Libs\InternalLib\GCDiscordLib\include;$(SolutionDir)\Libs\ExternalLib\luajitLib</IncludePath>
     <LibraryPath>$(ProjectPT)/InternalLib\KNCSDK_2015\Include\Serializer\zlib;$(ProjectPT)/ExternalLib\DXSDK\Lib\x86;D:\!PT melhorias\Project\SrcGame\src\Game\API;$(Lib)/DX9/Lib/x86;$(Lib)/curl/lib;$(Lib)/zlib/lib;$(LibraryPath)</LibraryPath>
     <TargetName>Game</TargetName>
-    <OutDir>D:\!PT melhorias\Cronus Priston Tale</OutDir>
+    <OutDir>..\..\bin\game</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Gandalf|Win32'">
     <IntDir>..\..\bin\game</IntDir>
