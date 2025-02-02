@@ -79,9 +79,9 @@ void cSHOW_DMG::AddDef(DWORD Serial, Type Type, int value)
 
 			if (exp64 < ExpLevelTable[mlevel])
 			{
-				INT64 exp = value * 1000;
+				INT64 exp = value * 2000;
 				exp64 += exp;
-				wsprintf(newDmg->Text, "Exp %d", value*1000);
+				wsprintf(newDmg->Text, "Exp %d", value*2000);
 				SetExp64(&lpCurPlayer->smCharInfo, exp64);
 				CodeXorCharInfo_Exp();
 				ReformCharForm();
