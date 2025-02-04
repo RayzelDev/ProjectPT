@@ -276,7 +276,7 @@ if (!pItemFrame || !pItem)
 	{
 		DWORD itemCode = (pItem->CODE & sinITEM_MASK2);
 
-		if (itemCode == sinPR1 || itemCode == sinPR2 || itemCode == sinPR3)
+		if (itemCode == sinPR1 || itemCode == sinPR2 || itemCode == sinPR3 || itemCode == sinOS1)
 		{
 			int frameID = pItemFrame->getID() - 0x100;
 			if (!lstrcmpi(pItem->LastCategory, StoneCode[frameID]))
@@ -298,7 +298,7 @@ void CManufactureGoldWindow::OnMainFrameHover(UINewItemFrame* pItemFrame, sITEM*
 	{
 		DWORD itemCode = (pItem->CODE & sinITEM_MASK2);
 
-		if (itemCode == sinDR1 || itemCode == sinOA2 || itemCode == sinDB1 || itemCode == sinDG1)
+		if (itemCode == sinDR1 || itemCode == sinOA2 || itemCode == sinDB1 || itemCode == sinDG1 || itemCode == sinWP1)
 			pItemFrame->setPutItem(true);
 		else
 			pItemFrame->setPutItem(false);
