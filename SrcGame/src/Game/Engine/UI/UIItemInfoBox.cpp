@@ -749,67 +749,83 @@ namespace UI
 			AddString(1, "");
 			break;
 		case (sinDR1 | sin05):
-			AddString(0, "Para Craftar Utilize\n3 Infernas", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(0, "Para Craftar Utilize\n3 Infernas", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
 		case (sinDR1 | sin06):
-			AddString(0, "Para Craftar Utilize\n3 Infernas", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(0, "Para Craftar Utilize\n3 Infernas", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
 		case (sinDR1 | sin07):
-			AddString(0, "Para Craftar Utilize\n3 Mirages", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(0, "Para Craftar Utilize\n3 Mirages", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
 		case (sinDR1 | sin08):
-			AddString(0, "Para Craftar Utilize\n3 Celestos", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(0, "Para Craftar Utilize\n3 Celestos", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
 		case (sinWA1 | sin19):
-			AddString(0, "Para Craftar o Machado Wyvern\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(0, "Para Craftar o Machado Wyvern\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
 		case (sinWA1 | sin21):
-			AddString(0, "Para Craftar o Machado Zecran\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(0, "Para Craftar o Machado Zecran\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
 		case (sinWS2 | sin21):
-			AddString(0, "Para Craftar A Espada da Justiça\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(0, "Para Craftar A Espada da Justiça\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
 		case (sinWS2 | sin24):
-			AddString(0, "Para Craftar A Espada Extrema\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(0, "Para Craftar A Espada Extrema\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
 		case (sinWP1 | sin20):
-			AddString(0, "Para Craftar A Foice Implacavel\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(0, "Para Craftar A Foice Implacavel\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
 		case (sinWP1 | sin22):
-			AddString(0, "Para Craftar A Foice da Morte\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(0, "Para Craftar A Foice da Morte\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
 		case (sinWT1 | sin20):
-			AddString(0, "Para Craftar A Lança Imortal\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(0, "Para Craftar A Lança Imortal\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
 		case (sinWT1 | sin22):
-			AddString(0, "Para Craftar A Lança Herege\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(0, "Para Craftar A Lança Herege\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
 		case (sinWC1 | sin19):
-			AddString(0, "Para Craftar A Garra Vibora\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(0, "Para Craftar A Garra Vibora\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
 		case (sinWC1 | sin21):
-			AddString(0, "Para Craftar A Garra da Injustiça\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(0, "Para Craftar A Garra da Injustiça\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
 		case (sinWS1 | sin21):
-			AddString(0, "Para Craftar O Arco Wyvern\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(0, "Para Craftar O Arco Wyvern\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
 		case (sinWS1 | sin23):
-			AddString(0, "Para Craftar O Arco Imortal\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(0, "Para Craftar O Arco Imortal\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinWM1 | sin20):
+			AddString(0, "Para Craftar A Varinha Oraculo\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinWM1 | sin22):
+			AddString(0, "Para Craftar O Cajado Celestial\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinWH1 | sin20):
+			AddString(0, "Para Craftar O Martelo Guardião\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinWH1 | sin22):
+			AddString(0, "Para Craftar O Martelo da Perdição\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
 		case (sinBI1 | sin10):
