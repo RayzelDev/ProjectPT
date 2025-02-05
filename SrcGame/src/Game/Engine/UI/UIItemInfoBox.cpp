@@ -748,6 +748,22 @@ namespace UI
 			AddString(0, "Usado para teletransporta-se para outros locais", D3DCOLOR_ARGB(255, 245, 240, 218));
 			AddString(1, "");
 			break;
+		case (sinDR1 | sin05):
+			AddString(0, "3 Infernas", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(1, "");
+			break;
+		case (sinDR1 | sin06):
+			AddString(0, "3 Infernas", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(1, "");
+			break;
+		case (sinDR1 | sin07):
+			AddString(0, "3 Mirages", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(1, "");
+			break;
+		case (sinDR1 | sin08):
+			AddString(0, "3 Celestos", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(1, "");
+			break;
 		case (sinBI1 | sin10):
 			AddString(0, "Diminui a chance de Falha do Aging em 20%!", D3DCOLOR_ARGB(255, 245, 240, 218));
 			AddString(1, "");
