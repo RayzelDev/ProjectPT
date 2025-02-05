@@ -768,6 +768,26 @@ namespace UI
 			AddString(0, "Para Craftar o Machado Wyvern\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
 			AddString(1, "");
 			break;
+		case (sinWA1 | sin21):
+			AddString(0, "Para Craftar o Machado Zecran\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(1, "");
+			break;
+		case (sinWS2 | sin21):
+			AddString(0, "Para Craftar A Espada da Justiça\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(1, "");
+			break;
+		case (sinWS2 | sin24):
+			AddString(0, "Para Craftar A Espada Extrema\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(1, "");
+			break;
+		case (sinWP1 | sin20):
+			AddString(0, "Para Craftar A Foice Implacavel\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(1, "");
+			break;
+		case (sinWP1 | sin22):
+			AddString(0, "Para Craftar A Foice da Morte\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
+			AddString(1, "");
+			break;
 		case (sinBI1 | sin10):
 			AddString(0, "Diminui a chance de Falha do Aging em 20%!", D3DCOLOR_ARGB(255, 245, 240, 218));
 			AddString(1, "");
