@@ -876,6 +876,14 @@ namespace UI
 			AddString(0, "Para Craftar O Bracelete Fenix\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
+		case (sinOR1 | sin23):
+			AddString(0, "Para Craftar O Anel Mistico+2\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinOR1 | sin24):
+			AddString(0, "Para Craftar O Anel Mistico+3\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
 		case (sinBI1 | sin10):
 			AddString(0, "Diminui a chance de Falha do Aging em 20%!", D3DCOLOR_ARGB(255, 245, 240, 218));
 			AddString(1, "");
