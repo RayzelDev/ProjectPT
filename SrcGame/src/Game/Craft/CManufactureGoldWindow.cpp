@@ -300,7 +300,7 @@ void CManufactureGoldWindow::OnMainFrameHover(UINewItemFrame* pItemFrame, sITEM*
 
 		if (itemCode == sinDR1 || itemCode == sinOA2 || itemCode == sinDB1 || itemCode == sinDG1 || itemCode == sinWP1 || itemCode == sinWS2 || itemCode == sinWA1 ||
 			itemCode == sinWT1 || itemCode == sinWC1 || itemCode == sinWS1 || itemCode == sinWM1 || itemCode == sinWH1 || itemCode == sinDA1 || itemCode == sinDA2 ||
-			itemCode == sinDS1 || itemCode == sinOR1)
+			itemCode == sinDS1 || itemCode == sinOR1 || itemCode == sinOA1)
 			pItemFrame->setPutItem(true);
 		else
 			pItemFrame->setPutItem(false);
