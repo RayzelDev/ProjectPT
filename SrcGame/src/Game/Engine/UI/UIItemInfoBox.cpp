@@ -721,27 +721,27 @@ namespace UI
 			}
 			break;
 		case (sinSP1 | sin05):
-			AddString(0, "Clique com o botão esquerdo para utilizar\nObtém 30 Manas Místicas", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(0, "Clique com o botão direito para utilizar\nObtém 30 Manas Místicas", D3DCOLOR_ARGB(255, 245, 240, 218));
 			AddString(1, "");
 			break;
 		case (sinSP1 | sin06):
-			AddString(0, "Clique com o botão esquerdo para utilizar\nObtém um item aleatório da caixa", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(0, "Clique com o botão direito para utilizar\nObtém um item aleatório da caixa", D3DCOLOR_ARGB(255, 245, 240, 218));
 			AddString(1, "");
 			break;
 		case (sinSP1 | sin07):
-			AddString(0, "Clique com o botão esquerdo para utilizar\nObtém um item aleatório da caixa", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(0, "Clique com o botão direito para utilizar\nObtém um item aleatório da caixa", D3DCOLOR_ARGB(255, 245, 240, 218));
 			AddString(1, "");
 			break;
 		case (sinSP1 | sin08):
-			AddString(0, "Clique com o botão esquerdo para utilizar\nObtém um item aleatório da caixa", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(0, "Clique com o botão direito para utilizar\nObtém um item aleatório da caixa", D3DCOLOR_ARGB(255, 245, 240, 218));
 			AddString(1, "");
 			break;
 		case (sinSP1 | sin09):
-			AddString(0, "Clique com o botão esquerdo para utilizar\nObtém um item aleatório da caixa", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(0, "Clique com o botão direito para utilizar\nObtém um item aleatório da caixa", D3DCOLOR_ARGB(255, 245, 240, 218));
 			AddString(1, "");
 			break;
 		case (sinSP1 | sin10):
-			AddString(0, "Clique com o botão esquerdo para utilizar\nObtém um item aleatório da caixa", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(0, "Clique com o botão direito para utilizar\nObtém um item aleatório da caixa", D3DCOLOR_ARGB(255, 245, 240, 218));
 			AddString(1, "");
 			break;
 		case (sinBI1 | sin08):
@@ -749,19 +749,23 @@ namespace UI
 			AddString(1, "");
 			break;
 		case (sinDR1 | sin05):
-			AddString(0, "3 Infernas", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(0, "Para Craftar Utilize\n3 Infernas", D3DCOLOR_ARGB(255, 245, 240, 218));
 			AddString(1, "");
 			break;
 		case (sinDR1 | sin06):
-			AddString(0, "3 Infernas", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(0, "Para Craftar Utilize\n3 Infernas", D3DCOLOR_ARGB(255, 245, 240, 218));
 			AddString(1, "");
 			break;
 		case (sinDR1 | sin07):
-			AddString(0, "3 Mirages", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(0, "Para Craftar Utilize\n3 Mirages", D3DCOLOR_ARGB(255, 245, 240, 218));
 			AddString(1, "");
 			break;
 		case (sinDR1 | sin08):
-			AddString(0, "3 Celestos", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(0, "Para Craftar Utilize\n3 Celestos", D3DCOLOR_ARGB(255, 245, 240, 218));
+			AddString(1, "");
+			break;
+		case (sinWA1 | sin19):
+			AddString(0, "Para Craftar o Machado Wyvern\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(240, 215, 244, 238));
 			AddString(1, "");
 			break;
 		case (sinBI1 | sin10):
