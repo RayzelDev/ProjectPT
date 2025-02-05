@@ -844,6 +844,14 @@ namespace UI
 			AddString(0, "Para Craftar O Roupao Eterno\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
+		case (sinDS1 | sin19):
+			AddString(0, "Para Craftar O Escudo Fenix\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinDS1 | sin21):
+			AddString(0, "Para Craftar O Escudo da Morte\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
 		case (sinBI1 | sin10):
 			AddString(0, "Diminui a chance de Falha do Aging em 20%!", D3DCOLOR_ARGB(255, 245, 240, 218));
 			AddString(1, "");
