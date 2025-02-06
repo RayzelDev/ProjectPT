@@ -1757,7 +1757,7 @@ int AddExp(INT64 Exp)
 	//int mlevel = CHAR_LEVEL_MAX - 2;
 
 	bool flag = false;
-	// DEFINE O LEVEL MÁXIMO PARA GANHAR EXP NO CASO, 119.
+	// DEFINE O LEVEL MÁXIMO PARA GANHAR EXP NO CASO, 149.
 	int mlevel = 145;
 
 	if (exp64 < ExpLevelTable[mlevel])

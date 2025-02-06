@@ -42,6 +42,20 @@ void cSHOW_DMG::AddDmg(int Dmg, DWORD Serial, Type Type)
 	}
 }
 
+int CheckarLevelTable()
+{
+	int cnt = 0;
+	int ChkSum = 0;
+
+	while (1) {
+		if (ExpLevelTable[cnt] == -1) break;
+		ChkSum += ExpLevelTable[cnt] * (cnt + 1);
+		cnt++;
+	}
+
+	return ChkSum;
+}
+
 void cSHOW_DMG::AddDef(DWORD Serial, Type Type, int value)
 {
 	sDMG* newDmg = new sDMG;
@@ -89,6 +103,33 @@ void cSHOW_DMG::AddDef(DWORD Serial, Type Type, int value)
 				NumLineComa64(exp, szTemp);
 				CHATGAMEHANDLE->AddChatBoxTextEx(EChatColor::CHATCOLOR_Notice, "> Você Ganhou %s de experiência!", szTemp);
 			}
+
+			int Level = lpCurPlayer->smCharInfo.Level;
+			INT64 iexp = ExpLevelTable[Level];
+			int LevelTableSum = 547991164;
+
+			if (LevelTableSum != CheckarLevelTable())
+			{
+				DisconnectFlag = GetCurrentTime();
+				break;
+			}
+
+			while (iexp >= 0 && exp64 >= iexp && lpCurPlayer->smCharInfo.Level < CHAR_LEVEL_MAX)
+			{
+
+				lpCurPlayer->smCharInfo.Level++;
+				lpCurPlayer->smCharInfo.Next_Exp = ExpLevelTable[Level + 1];
+				StartEffect(lpCurPlayer->pX, lpCurPlayer->pY + 32 * fONE, lpCurPlayer->pZ, EFFECT_LEVELUP1);
+				esPlaySound(7, 400);
+				ReformCharForm();
+
+				SendPlayUpdateInfo();
+				SaveGameData();
+
+				Level = lpCurPlayer->smCharInfo.Level;
+				iexp = ExpLevelTable[Level];
+			}
+
 			break;
 		}
 
