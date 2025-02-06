@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<AttributeAnimation>
+    <!-- Animação de cor (Arco-íris) -->
+    <Animation type="Color">
+        <KeyFrame time="0.0" value="1.0 0.0 0.0 1.0" easing="Linear" />   <!-- Vermelho -->
+        <KeyFrame time="5.0" value="1.0 0.5 0.0 1.0" easing="Linear" />   <!-- Laranja -->
+        <KeyFrame time="10.0" value="1.0 1.0 0.0 1.0" easing="Linear" />  <!-- Amarelo -->
+        <KeyFrame time="15.0" value="0.0 1.0 0.0 1.0" easing="Linear" />  <!-- Verde -->
+        <KeyFrame time="20.0" value="0.0 0.0 1.0 1.0" easing="Linear" />  <!-- Azul -->
+        <KeyFrame time="25.0" value="0.5 0.0 1.0 1.0" easing="Linear" />  <!-- Roxo -->
+        <KeyFrame time="30.0" value="1.0 0.0 0.0 1.0" easing="Linear" />  <!-- Volta ao Vermelho -->
+    </Animation>
+
+    <!-- Animação de explosão (Raio saindo do objeto) -->
+    <Animation type="Scale">
+        <KeyFrame time="0.0" value="1.0 1.0" easing="EaseOut" />
+        <KeyFrame time="0.3" value="2.5 2.5" easing="EaseOut" />  <!-- Expande rápido -->
+        <KeyFrame time="0.6" value="1.0 1.0" easing="EaseOut" />  <!-- Volta ao normal -->
+    </Animation>
+
+    <!-- Animação de brilho (Raio se dissipando) -->
+    <Animation type="Opacity">
+        <KeyFrame time="0.0" value="1.0" easing="Linear" />  
+        <KeyFrame time="0.3" value="0.5" easing="EaseOut" />  <!-- Vai sumindo -->
+        <KeyFrame time="0.6" value="0.0" easing="EaseOut" />  <!-- Desaparece -->
+    </Animation>
+
+    <!-- Animação de rotação (Para criar um efeito dinâmico no raio) -->
+    <Animation type="Rotation">
+        <KeyFrame time="0.0" value="0.0" easing="Linear" />
+        <KeyFrame time="0.6" value="45.0" easing="Linear" />  <!-- Pequena rotação no raio -->
+    </Animation>
+
+    <!-- Efeito de pulsação contínua -->
+    <Loop time="0.6" />
+</AttributeAnimation>

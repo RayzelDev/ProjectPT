@@ -2,5 +2,5 @@
 <Material>
 	<Texture type="Diffuse" file="image\\Sinimage\\Items\\DropItem\\mixS_03.bmp" />
 	<Attribute type="DiffuseColor" value="1.000000 1.000000 1.000000 1.000000" />
-	<AttributeAnimation file="game\scripts\animations\aginglevel21.xml" />
+	<AttributeAnimation file="game\scripts\animations\aginglevel60.xml" />
 </Material>
