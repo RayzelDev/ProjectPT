@@ -16,7 +16,7 @@
 #define T_COIN_TEXT_POSI		8
 
 #define MAX_SHELTOM				15
-#define MAX_AGING				30 // Nível do Aging aqui máximo
+#define MAX_AGING				60 // Nível do Aging aqui máximo
 #define MAX_RUNE				14
 #define MAX_RECIPE_KIND			11
 #define MAX_RECIPE_ITEM			60
