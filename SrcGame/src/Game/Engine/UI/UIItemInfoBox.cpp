@@ -4085,41 +4085,42 @@ namespace UI
 					const int ageLevel = cItemWrapper.sItemInfo.ItemAgingCount[0] ? cItemWrapper.sItemInfo.ItemAgingNum[0] + 1 : cItemWrapper.sItemInfo.ItemAgingNum[0];
 
 					//Render Sheltoms used for aging
-					auto it = vAgeSheltoms.find(ageLevel);
-					if (it != vAgeSheltoms.end())
-					{
-						std::vector<int> sheltoms = it->second;
+					// Removido o desenho dos sheltons usados para aging
+					//auto it = vAgeSheltoms.find(ageLevel);
+					//if (it != vAgeSheltoms.end())
+					//{
+					//	std::vector<int> sheltoms = it->second;
 
-						int iSheltomTypes = 0;
-						for (unsigned int iSheltomIndex = 0; iSheltomIndex < sheltoms.size(); iSheltomIndex++)
-							if (sheltoms[iSheltomIndex] > 0)
-								iSheltomTypes++;
+					//	int iSheltomTypes = 0;
+					//	for (unsigned int iSheltomIndex = 0; iSheltomIndex < sheltoms.size(); iSheltomIndex++)
+					//		if (sheltoms[iSheltomIndex] > 0)
+					//			iSheltomTypes++;
 
-						int iTotalWidth = iSheltomTypes * iSheltomWidth;
-						int iInitialOffset = (iItemInfoBoxWidth - iTotalWidth) / 2;
+					//	int iTotalWidth = iSheltomTypes * iSheltomWidth;
+					//	int iInitialOffset = (iItemInfoBoxWidth - iTotalWidth) / 2;
 
-						int iOffsetX = 0;
-						int iUniqueSheltomCount = 0;
+					//	int iOffsetX = 0;
+					//	int iUniqueSheltomCount = 0;
 
-						for (unsigned int iSheltomIndex = 0; iSheltomIndex < sheltoms.size(); iSheltomIndex++)
-						{
-							if (sheltoms[iSheltomIndex] > 0)
-							{
-								UI::ImageRender::Render(vSheltomImages[iSheltomIndex], iX + iInitialOffset + iOffsetX, iY + 5 + iSheltomYPosExtra + iYExtra, iSheltomWidth, iSheltomHeight, 0, 0, -1);
+					//	for (unsigned int iSheltomIndex = 0; iSheltomIndex < sheltoms.size(); iSheltomIndex++)
+					//	{
+					//		if (sheltoms[iSheltomIndex] > 0)
+					//		{
+					//			UI::ImageRender::Render(vSheltomImages[iSheltomIndex], iX + iInitialOffset + iOffsetX, iY + 5 + iSheltomYPosExtra + iYExtra, iSheltomWidth, iSheltomHeight, 0, 0, -1);
 
-								//7 - there is only 7 sheltom count text
-								paSheltomCountText[iUniqueSheltomCount]->SetText(FormatString("%d", sheltoms[iSheltomIndex]));
-								paSheltomCountText[iUniqueSheltomCount]->SetNoClip(TRUE);
-								paSheltomCountText[iUniqueSheltomCount]->SetBox(Rectangle2D(iInitialOffset + iOffsetX, iSheltomWidth + iSheltomYPosExtra + iYExtra, iSheltomWidth, iSheltomHeight));
-								paSheltomCountText[iUniqueSheltomCount]->SetHorizontalAlign(ALIGN_Center);
-								paSheltomCountText[iUniqueSheltomCount]->SetVerticalAlign(ALIGN_Center);
-								paSheltomCountText[iUniqueSheltomCount]->Render(iX, iY, RESOLUTION_WIDTH, RESOLUTION_HEIGHT, 0, 0);
+					//			//7 - there is only 7 sheltom count text
+					//			paSheltomCountText[iUniqueSheltomCount]->SetText(FormatString("%d", sheltoms[iSheltomIndex]));
+					//			paSheltomCountText[iUniqueSheltomCount]->SetNoClip(TRUE);
+					//			paSheltomCountText[iUniqueSheltomCount]->SetBox(Rectangle2D(iInitialOffset + iOffsetX, iSheltomWidth + iSheltomYPosExtra + iYExtra, iSheltomWidth, iSheltomHeight));
+					//			paSheltomCountText[iUniqueSheltomCount]->SetHorizontalAlign(ALIGN_Center);
+					//			paSheltomCountText[iUniqueSheltomCount]->SetVerticalAlign(ALIGN_Center);
+					//			paSheltomCountText[iUniqueSheltomCount]->Render(iX, iY, RESOLUTION_WIDTH, RESOLUTION_HEIGHT, 0, 0);
 
-								iOffsetX += iSheltomWidth;
-								iUniqueSheltomCount++;
-							}
-						}
-					}
+					//			iOffsetX += iSheltomWidth;
+					//			iUniqueSheltomCount++;
+					//		}
+					//	}
+					//}
 
 				}
 			}
