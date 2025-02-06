@@ -812,6 +812,102 @@ namespace UI
 			AddString(0, "Para Craftar O Arco Imortal\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
 			AddString(1, "");
 			break;
+		case (sinWM1 | sin20):
+			AddString(0, "Para Craftar A Varinha Oraculo\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinWM1 | sin22):
+			AddString(0, "Para Craftar O Cajado Celestial\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinWH1 | sin20):
+			AddString(0, "Para Craftar O Martelo Guardião\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinWH1 | sin22):
+			AddString(0, "Para Craftar O Martelo da Perdição\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinDA1 | sin21):
+			AddString(0, "Para Craftar A Armadura Fenix\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinDA1 | sin23):
+			AddString(0, "Para Craftar A Armadura Frenesi\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinDA2 | sin21):
+			AddString(0, "Para Craftar O Roupão Ruah\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinDA2 | sin23):
+			AddString(0, "Para Craftar O Roupao Eterno\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinDS1 | sin19):
+			AddString(0, "Para Craftar O Escudo Fenix\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinDS1 | sin21):
+			AddString(0, "Para Craftar O Escudo da Morte\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinDG1 | sin19):
+			AddString(0, "Para Craftar A Luva Inferno\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinDG1 | sin21):
+			AddString(0, "Para Craftar A Luva Fenix\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinDB1 | sin19):
+			AddString(0, "Para Craftar A Bota Inferno\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinDB1 | sin21):
+			AddString(0, "Para Craftar A Bota Fenix\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinOA2 | sin19):
+			AddString(0, "Para Craftar O Bracelete Inferno\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinOA2 | sin21):
+			AddString(0, "Para Craftar O Bracelete Fenix\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinOR1 | sin23):
+			AddString(0, "Para Craftar O Anel Mistico+2\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinOR1 | sin24):
+			AddString(0, "Para Craftar O Anel Mistico+3\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinOA1 | sin23):
+			AddString(0, "Para Craftar O Amuleto Mistico+2\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinOA1 | sin24):
+			AddString(0, "Para Craftar O Amuleto Mistico+3\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinOM1 | sin20):
+			AddString(0, "Para Craftar O Orbital Clairvoyance\nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinOM1 | sin22):
+			AddString(0, "Para Craftar O Orbital Arvenus\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinOE1 | sin01):
+			AddString(0, "Para Craftar O Brinco do Aventureiro \nUtilize 3 Infernas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
+		case (sinOE1 | sin02):
+			AddString(0, "Para Craftar O  Brinco do Guerreiro\nUtilize 3 Enigmas\n ", D3DCOLOR_ARGB(255, 132, 50, 254));
+			AddString(1, "");
+			break;
 		case (sinBI1 | sin10):
 			AddString(0, "Diminui a chance de Falha do Aging em 20%!", D3DCOLOR_ARGB(255, 245, 240, 218));
 			AddString(1, "");
@@ -3989,41 +4085,42 @@ namespace UI
 					const int ageLevel = cItemWrapper.sItemInfo.ItemAgingCount[0] ? cItemWrapper.sItemInfo.ItemAgingNum[0] + 1 : cItemWrapper.sItemInfo.ItemAgingNum[0];
 
 					//Render Sheltoms used for aging
-					auto it = vAgeSheltoms.find(ageLevel);
-					if (it != vAgeSheltoms.end())
-					{
-						std::vector<int> sheltoms = it->second;
+					// Removido o desenho dos sheltons usados para aging
+					//auto it = vAgeSheltoms.find(ageLevel);
+					//if (it != vAgeSheltoms.end())
+					//{
+					//	std::vector<int> sheltoms = it->second;
 
-						int iSheltomTypes = 0;
-						for (unsigned int iSheltomIndex = 0; iSheltomIndex < sheltoms.size(); iSheltomIndex++)
-							if (sheltoms[iSheltomIndex] > 0)
-								iSheltomTypes++;
+					//	int iSheltomTypes = 0;
+					//	for (unsigned int iSheltomIndex = 0; iSheltomIndex < sheltoms.size(); iSheltomIndex++)
+					//		if (sheltoms[iSheltomIndex] > 0)
+					//			iSheltomTypes++;
 
-						int iTotalWidth = iSheltomTypes * iSheltomWidth;
-						int iInitialOffset = (iItemInfoBoxWidth - iTotalWidth) / 2;
+					//	int iTotalWidth = iSheltomTypes * iSheltomWidth;
+					//	int iInitialOffset = (iItemInfoBoxWidth - iTotalWidth) / 2;
 
-						int iOffsetX = 0;
-						int iUniqueSheltomCount = 0;
+					//	int iOffsetX = 0;
+					//	int iUniqueSheltomCount = 0;
 
-						for (unsigned int iSheltomIndex = 0; iSheltomIndex < sheltoms.size(); iSheltomIndex++)
-						{
-							if (sheltoms[iSheltomIndex] > 0)
-							{
-								UI::ImageRender::Render(vSheltomImages[iSheltomIndex], iX + iInitialOffset + iOffsetX, iY + 5 + iSheltomYPosExtra + iYExtra, iSheltomWidth, iSheltomHeight, 0, 0, -1);
+					//	for (unsigned int iSheltomIndex = 0; iSheltomIndex < sheltoms.size(); iSheltomIndex++)
+					//	{
+					//		if (sheltoms[iSheltomIndex] > 0)
+					//		{
+					//			UI::ImageRender::Render(vSheltomImages[iSheltomIndex], iX + iInitialOffset + iOffsetX, iY + 5 + iSheltomYPosExtra + iYExtra, iSheltomWidth, iSheltomHeight, 0, 0, -1);
 
-								//7 - there is only 7 sheltom count text
-								paSheltomCountText[iUniqueSheltomCount]->SetText(FormatString("%d", sheltoms[iSheltomIndex]));
-								paSheltomCountText[iUniqueSheltomCount]->SetNoClip(TRUE);
-								paSheltomCountText[iUniqueSheltomCount]->SetBox(Rectangle2D(iInitialOffset + iOffsetX, iSheltomWidth + iSheltomYPosExtra + iYExtra, iSheltomWidth, iSheltomHeight));
-								paSheltomCountText[iUniqueSheltomCount]->SetHorizontalAlign(ALIGN_Center);
-								paSheltomCountText[iUniqueSheltomCount]->SetVerticalAlign(ALIGN_Center);
-								paSheltomCountText[iUniqueSheltomCount]->Render(iX, iY, RESOLUTION_WIDTH, RESOLUTION_HEIGHT, 0, 0);
+					//			//7 - there is only 7 sheltom count text
+					//			paSheltomCountText[iUniqueSheltomCount]->SetText(FormatString("%d", sheltoms[iSheltomIndex]));
+					//			paSheltomCountText[iUniqueSheltomCount]->SetNoClip(TRUE);
+					//			paSheltomCountText[iUniqueSheltomCount]->SetBox(Rectangle2D(iInitialOffset + iOffsetX, iSheltomWidth + iSheltomYPosExtra + iYExtra, iSheltomWidth, iSheltomHeight));
+					//			paSheltomCountText[iUniqueSheltomCount]->SetHorizontalAlign(ALIGN_Center);
+					//			paSheltomCountText[iUniqueSheltomCount]->SetVerticalAlign(ALIGN_Center);
+					//			paSheltomCountText[iUniqueSheltomCount]->Render(iX, iY, RESOLUTION_WIDTH, RESOLUTION_HEIGHT, 0, 0);
 
-								iOffsetX += iSheltomWidth;
-								iUniqueSheltomCount++;
-							}
-						}
-					}
+					//			iOffsetX += iSheltomWidth;
+					//			iUniqueSheltomCount++;
+					//		}
+					//	}
+					//}
 
 				}
 			}
