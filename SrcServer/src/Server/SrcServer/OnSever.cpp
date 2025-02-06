@@ -18237,7 +18237,7 @@ int LowLevelItems(rsPLAYINFO* lpPlayInfo)
 		//createLowLevelItems(lpPlayInfo, "OA121", 0);
 
 
-	lpPlayInfo->AddServerMoney(50000, WHERE_SELL_ITEM);
+	lpPlayInfo->AddServerMoney(750000, WHERE_SELL_ITEM);
 
 	SERVERCHAT->SendChat(lpPlayInfo, EChatColor::CHATCOLOR_Global, "Novato> Kit inicial recebido");
 

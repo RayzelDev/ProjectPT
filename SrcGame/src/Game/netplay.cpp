@@ -2979,9 +2979,9 @@ int rsTRANS_SERVER::RecvMessage(smTHREADSOCK* pData)
 	}
 	break;
 	case 0x44550005: // OURO INICIAL
-		sinPlusMoney(50000);
+		sinPlusMoney(750000);
 		ReformCharForm();
-		AddInvenMoney(50000);
+		AddInvenMoney(750000);
 
 		/*extern void CompleteAllQuests();
 		CompleteAllQuests();*/
