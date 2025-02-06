@@ -34572,6 +34572,7 @@ int	rsUpdateServerParam(rsPLAYINFO* lpPlayInfo, DWORD dwUpdateCode, int Param1, 
 // Itens iniciais
 int rsStartUser_PresentItem(rsPLAYINFO* lpPlayInfo)
 {
+	return false;
 	TRANS_CHATMESSAGE TransChatMessage;
 	sDEF_ITEMINFO* lpDefItem = 0;
 
