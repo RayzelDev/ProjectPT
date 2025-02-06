@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Material>
+	<Attribute type="DiffuseColor" value="1.000000 1.000000 1.000000 1.000000" />
+	<AttributeAnimation file="game\scripts\animations\aginglevel32.xml" />
+</Material>

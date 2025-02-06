@@ -30,7 +30,7 @@ Graphics::Camera* frameCamera = nullptr;
 
 Graphics::Material* dropItemMaterial = nullptr;
 Graphics::Material* itemQuestMaterial = nullptr;
-Graphics::Material* itemAgingMaterial[30] = { 0 };
+Graphics::Material* itemAgingMaterial[MAX_AGING] = { 0 };
 Graphics::Material* itemMixingMaterial[20] = { 0 };
 
 extern void AnimateMeshGate(void* mesh, int frame, void* angle, void* psFrameInfo, void* talkBone, void* out);

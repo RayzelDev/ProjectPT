@@ -1187,29 +1187,71 @@ static short	AgingBlinkColor[8][4] = {
 /*----------------------------------------------------------------------------*
 *Desc: 에이징 차수에 따른 무기 컬러값  		
 *-----------------------------------------------------------------------------*/
-const int  CONST_AGINGBCOLOR_MAX = 22;
+const int  CONST_AGINGBCOLOR_MAX = MAX_AGING;
 
+// Cores do Aging
 static short	AgingBlinkColor[CONST_AGINGBCOLOR_MAX][6] =
 {
-	{ 100,	 40,	 90,	0,	-1,	0			},		//약한보라	
-	{ 120,	100,	 10,	0,	-1,	0			},		//노랑
-	{   0,	110,	 30,	0,	-1,	0			},		//초록
-	{   0,	 50,	140,	0,	 0,	smTEXSTATE_FS_SCROLL5	},		//파랑
-	{ 100,	  0,	 90,	0,	 1,	smTEXSTATE_FS_SCROLL6	},		//보라
-	{ 150,	 60,	  0,	0,	 2,	smTEXSTATE_FS_SCROLL6	},		//주황
-	{ 150,	 10,	  0,	0,	 3,	smTEXSTATE_FS_SCROLL8	},		//빨강
-	{  20,	220,	190,	0,	 4,	smTEXSTATE_FS_SCROLL8	},		//청록
-	{  10,	220,	 30,	0,	 4,	smTEXSTATE_FS_SCROLL8	},		//연두
-	{ 170,	 40,	170,	0,	 4,	smTEXSTATE_FS_SCROLL9	},		//보라
-	{ 250,	 30,	160,	0,	 4,	smTEXSTATE_FS_SCROLL9	},		//진한분홍
-	{  30,	190,	255,	0,	 4,	smTEXSTATE_FS_SCROLL9	},		//하늘
-	{ 250,	130,	 30,	0,	 4,	smTEXSTATE_FS_SCROLL9	},		//연한주황
-	{ 120,	 30,	 30,	0,	 5,	smTEXSTATE_FS_SCROLL10	},		//고동
-	{ 130,	  0,	255,	0,	 5,	smTEXSTATE_FS_SCROLL10	},		//청보라
-	{ 220,	240,	 70,	0,	 5,	smTEXSTATE_FS_SCROLL10	},		//연한노랑
-	{ 240,	240,	240,	0,	 5,	smTEXSTATE_FS_SCROLL10	},
-	{ 153, 237, 218, 0, 5, smTEXSTATE_FS_SCROLL10 },
-	{ 121, 176, 238, 0, 5, smTEXSTATE_FS_SCROLL10 },
+	{ 100, 40, 90, 0, -1, 0 }, //1
+	{ 120, 100, 10, 0, -1, 0 }, //2
+	{ 0, 110, 30, 0, -1, 0 }, //3
+	{ 0, 50, 140, 0, 0, smTEXSTATE_FS_SCROLL5 }, //4
+	{ 100, 0, 90, 0, 1, smTEXSTATE_FS_SCROLL6 }, //5
+	{ 150, 60, 0, 0, 2, smTEXSTATE_FS_SCROLL6 }, //6
+	{ 150, 10, 0, 0, 3, smTEXSTATE_FS_SCROLL8 }, // 7
+	{ 20, 220, 190, 0, 4, smTEXSTATE_FS_SCROLL8 }, //8
+	{ 10, 220, 30, 0, 4, smTEXSTATE_FS_SCROLL8 },  //9
+	{ 170, 40, 170, 0, 4, smTEXSTATE_FS_SCROLL9 }, //10
+	{ 250, 30, 160, 0, 4, smTEXSTATE_FS_SCROLL9 }, //11
+	{ 30, 190, 255, 0, 4, smTEXSTATE_FS_SCROLL9 }, //12
+	{ 250, 130, 30, 0, 4, smTEXSTATE_FS_SCROLL9 }, //13
+	{ 120, 30, 30, 0, 5, smTEXSTATE_FS_SCROLL10 }, //14
+	{ 120, 30, 30, 0, 5, smTEXSTATE_FS_SCROLL10 }, //15
+	{ 51, 0, 51, 0, 5, smTEXSTATE_FS_SCROLL10 }, //16
+	{ 130,	  0,	255,	0,	 5,	smTEXSTATE_FS_SCROLL10	}, //17
+	{ 220, 240, 70, 0, 5, smTEXSTATE_FS_SCROLL10 }, //18
+	{ 240, 240,		240,	0,	 2, smTEXSTATE_FS_SCROLL10 }, //19
+	{ 1024, 256,	256,	0,	 2, smTEXSTATE_FS_SCROLL10 }, //20
+	{ 256,	256,	640,	0,	 2, smTEXSTATE_FS_SCROLL10 }, //21
+	{ 130,	  0,	255,	0,	 5,	smTEXSTATE_FS_SCROLL10	},//22
+	{ 220,	240,	 70,	0,	 5,	smTEXSTATE_FS_SCROLL10	},//23
+	{ 240,	240,	240,	0,	 5,	smTEXSTATE_FS_SCROLL10	},//24
+	{   0,	207,	255,	0,	 5,	smTEXSTATE_FS_SCROLL10},// 25
+	{ 155,	0,		30,		0,	 2,	smTEXSTATE_FS_REFLEX},// 26
+	{ 255,	0,		30,		150, 4,	smTEXSTATE_FS_REFLEX},// 27
+	{ 255,	0,		30,		100, 4,	smTEXSTATE_FS_REFLEX},// 28
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //29
+	{ 255,	162,	0,		0,	 5,	smTEXSTATE_FS_SCROLL10}, //30
+	{ 1024, 256,	256,	0,	 2, smTEXSTATE_FS_SCROLL10 }, //31
+	{ 256,	256,	640,	0,	 2, smTEXSTATE_FS_SCROLL10 }, //32
+	{ 130,	0,		255,	0,	 5,	smTEXSTATE_FS_SCROLL10	},//33
+	{ 220,	240,	70,		0,   5,	smTEXSTATE_FS_SCROLL10	},//34
+	{ 240,	240,	240,	0,	 5,	smTEXSTATE_FS_SCROLL10	},//35
+	{   0,	207,	255,	0,	 5,	smTEXSTATE_FS_SCROLL10},// 36
+	{ 155,	0,		30,		0,	 2,	smTEXSTATE_FS_REFLEX},// 37
+	{ 255,	0,		30,		150, 4,	smTEXSTATE_FS_REFLEX},// 38
+	{ 255,	0,		30,		100, 4,	smTEXSTATE_FS_REFLEX},// 39
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //40
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //41
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //42
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //43
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //44
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //45
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //46
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //47
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //48
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //49
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //50
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //51
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //52
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //53
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //54
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //55
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //56
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //57
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //58
+	{ 255,	0,		30,		0,	 4,	smTEXSTATE_FS_REFLEX}, //59
+	{ 1024, 256,	256,	0,	 2, smTEXSTATE_FS_SCROLL10 }, //60
 };
 
 static short	CraftBlinkColor[6][6] =
