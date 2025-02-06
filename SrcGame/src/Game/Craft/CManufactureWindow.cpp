@@ -279,7 +279,7 @@ if (!pItemFrame || !pItem)
 	{
 		DWORD itemCode = (pItem->CODE & sinITEM_MASK2);
 
-		if (itemCode == sinPR1 || itemCode == sinPR2 || itemCode == sinPR3)
+		if (itemCode == sinPR1 || itemCode == sinPR2 || itemCode == sinPR3 || itemCode == sinOS1)
 		{
 			int frameID = pItemFrame->getID() - 0x100;
 			if (!lstrcmpi(pItem->LastCategory, StoneCode[frameID]))
