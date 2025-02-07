@@ -93,9 +93,19 @@ void cSHOW_DMG::AddDef(DWORD Serial, Type Type, int value)
 
 			if (exp64 < ExpLevelTable[mlevel])
 			{
-				INT64 exp = value * 2000;
+				INT64 exp = FormulaDeExp(value);
+
+				if (lpCurPlayer->smCharInfo.Money < 998999999)
+				{
+					INT64 goldAddAtk = exp / 500;
+					lpCurPlayer->smCharInfo.Money += goldAddAtk;
+					char szTempGold[32] = { 0 };
+					NumLineComa64(goldAddAtk, szTempGold);
+					CHATGAMEHANDLE->AddChatBoxTextEx(EChatColor::CHATCOLOR_Notice, "> Você Ganhou %s de Gold!", szTempGold);
+				}
+				
 				exp64 += exp;
-				wsprintf(newDmg->Text, "Exp %d", value*2000);
+				wsprintf(newDmg->Text, "Exp %d", exp);
 				SetExp64(&lpCurPlayer->smCharInfo, exp64);
 				CodeXorCharInfo_Exp();
 				ReformCharForm();
@@ -140,7 +150,36 @@ void cSHOW_DMG::AddDef(DWORD Serial, Type Type, int value)
 		Damages.push_back(newDmg);
 	}
 }
+INT64 cSHOW_DMG::FormulaDeExp(INT64 exp)
+{
+	exp = exp * 2000;
 
+	//ModoPK 10% 
+	if (lpCurPlayer->PlayerPvPMode == TRUE)
+	{
+		exp = exp + (exp * 0.1);
+	}
+
+	//Fenix 20%
+	if (false)
+	{
+		exp = exp + (exp * 0.2);
+	}
+
+	//VIP 20%
+	if (false)
+	{
+		exp = exp + (exp * 0.2);
+	}
+
+	//Poção de Exp 30%
+	if (false)
+	{
+		exp = exp + (exp * 0.3);
+	}
+
+	return exp;
+}
 void cSHOW_DMG::DrawDmg(DWORD TargetSerial, int x, int y)
 {
 	char szBuff[255] = { 0 };

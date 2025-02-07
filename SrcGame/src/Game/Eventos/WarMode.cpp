@@ -104,7 +104,7 @@ int MODOWAR::ModoPVP(bool arena)
 			ModoPvPTimer = GetTickCount();
 
 			TitleBox::GetInstance()->SetText("Modo Matança Ativado!", 3);
-			CHATBOX->AddMessage("Modo Guerra> 10% de Drop adicional!", EChatColor::CHATCOLOR_Global);
+			CHATBOX->AddMessage("Modo PK> 10% de Drop, EXP e GOLD adicional!", EChatColor::CHATCOLOR_Global);
 
 			PLayerPvP = TRUE;
 

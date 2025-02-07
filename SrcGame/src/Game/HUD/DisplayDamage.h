@@ -33,6 +33,7 @@ public:
 	void AddDmg(int Dmg, DWORD Serial, Type Type);
 	void AddDef(DWORD Serial, Type Type, int value = 0);
 	void DrawDmg(DWORD TargetSerial, int x, int y);
+	INT64 FormulaDeExp(INT64 exp);
 
 private:
 	std::vector<sDMG*> Damages;

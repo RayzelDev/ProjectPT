@@ -1773,7 +1773,7 @@ int AddExp(INT64 Exp)
 
 		NumLineComa64(Exp, szTemp);
 
-		CHATGAMEHANDLE->AddChatBoxTextEx(EChatColor::CHATCOLOR_Notice, "> Você Ganhou %s de experiência!", szTemp);
+		//CHATGAMEHANDLE->AddChatBoxTextEx(EChatColor::CHATCOLOR_Notice, "> Você Ganhou %s de experiência!", szTemp);
 	}
 
 	SetExp64(&lpCurPlayer->smCharInfo, exp64);
