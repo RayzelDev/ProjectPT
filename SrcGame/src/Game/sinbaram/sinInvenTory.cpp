@@ -1743,7 +1743,106 @@ void cINVENTORY::RButtonDown(int x, int y)
 	}
 	else if (CManufactureGoldWindow::getInstance()->isOpen()) //Craft por GOLD
 	{
-		CHATGAMEHANDLE->AddChatBoxTextEx(EChatColor::CHATCOLOR_Notice, "> Entrou Aqui CRAFT GOLD!");
+		if (SelectInvenItemIndex)
+		{
+			int Index = SelectInvenItemIndex - 1;
+			sITEM& Item = InvenItem[Index];
+			DWORD itemCode = (Item.CODE & sinITEM_MASK2);
+			POINT MousePosition = { Item.x + 11, Item.y + 11 };
+			UINewWindow* janelaCraftGold = CManufactureGoldWindow::getInstance()->pWindow1;
+			auto pMainFrame = janelaCraftGold->GetElement<UINewItemFrame>(CraftGold_Receita);
+			sITEM* pRecipe = pMainFrame->getItem();
+
+			if (itemCode == sinDR1 || itemCode == sinOA2 || itemCode == sinDB1 || itemCode == sinDG1 || itemCode == sinWP1 || itemCode == sinWS2 || itemCode == sinWA1 ||
+				itemCode == sinWT1 || itemCode == sinWC1 || itemCode == sinWS1 || itemCode == sinWM1 || itemCode == sinWH1 || itemCode == sinDA1 || itemCode == sinDA2 ||
+				itemCode == sinDS1 || itemCode == sinOR1 || itemCode == sinOA1 || itemCode == sinOM1 || itemCode == sinOE1)
+			{
+				if (!pRecipe->Flag)
+				{
+					int PosX = 218 + ((i % 3) * 22);
+					int PosY = (193 + sinInterHeight2) + ((i / 3) * 22);
+
+					cInvenTory.PickUpInvenItem(MousePosition.x, MousePosition.y, TRUE);
+
+					//Atualiza o mouse.
+					MouseItem.x = PosX;
+					MouseItem.y = PosY;
+
+					CManufactureGoldWindow::getInstance()->OnPutRecipe(pMainFrame);
+					pMainFrame->setItem(&MouseItem);
+					sinPlaySound(sCraftItem.CraftItem[0].SoundIndex);
+				}
+				else
+				{
+					TitleBox::GetInstance()->SetText("Já existe uma Receita no Craft!", 3);
+				}
+
+			}
+			else if((InvenItem[Index].CODE & sinITEM_MASK2) == sinOS1) //COLOCAR A PEDRA
+			{
+				if (pRecipe->Flag)
+				{
+					int PosX = 218 + ((i % 3) * 22);
+					int PosY = (193 + sinInterHeight2) + ((i / 3) * 22);
+					int qtdRunasAdd = 0;
+
+					cInvenTory.PickUpInvenItem(MousePosition.x, MousePosition.y, TRUE);
+
+					//Atualiza o mouse.
+					MouseItem.x = PosX;
+					MouseItem.y = PosY;
+					for (size_t i = 0; i < 3; i++)
+					{
+						auto pItemFrame = janelaCraftGold->GetElement<UINewItemFrame>(CraftGold_Slots + i); //Verifica quantas runas/pedras já tem
+						if (pItemFrame)
+						{
+							auto pItem = pItemFrame->getItem();
+							if (pItem->Flag)
+							{	
+								if (!lstrcmpi(MouseItem.LastCategory, CManufactureGoldWindow::getInstance()->StoneCode[i]))
+								{
+									qtdRunasAdd++;
+								}
+							}
+						}
+					}
+
+					if (qtdRunasAdd == 3)
+					{
+						CHATGAMEHANDLE->AddChatBoxTextEx(EChatColor::CHATCOLOR_Notice, "> Craft já está completo");
+					}
+					else
+					{
+						if (!lstrcmpi(MouseItem.LastCategory, CManufactureGoldWindow::getInstance()->StoneCode[0])
+							|| !lstrcmpi(MouseItem.LastCategory, CManufactureGoldWindow::getInstance()->StoneCode[1])
+							|| !lstrcmpi(MouseItem.LastCategory, CManufactureGoldWindow::getInstance()->StoneCode[2]))
+						{
+							//ROTINA DE ADD O SHELTON VAI AQUI
+							for (size_t s = 0; s < 3; s++)
+							{
+								auto janelaDaRuna = janelaCraftGold->GetElement<UINewItemFrame>(CraftGold_Slots + s);
+								if (janelaDaRuna)
+								{
+									janelaDaRuna->setItem(&MouseItem);
+									sinPlaySound(sCraftItem.CraftItem[0].SoundIndex);
+								}
+								
+							}
+						}
+					}
+					
+				}
+				else
+				{
+					TitleBox::GetInstance()->SetText("Adicione uma Receita primeiro!", 3);
+				}
+			}
+			else
+			{
+				TitleBox::GetInstance()->SetText("Receita Invalida!", 3);
+			}
+
+		}
 	}
 	else if (CManufactureWindow::getInstance()->isOpen()) //Craft por COIN
 	{

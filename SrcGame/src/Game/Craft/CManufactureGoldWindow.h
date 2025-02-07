@@ -68,6 +68,9 @@ public:
 
 	void HandlePacket(PacketOpenManufactureGoldWindow* psPacket);
 	void HandlePacket(PacketRecipeInfoGold* psPacket);
+	UINewWindow* pWindow1;
+	void OnPutRecipe(UINewItemFrame* pItemFrame);
+	char StoneCode[3][32];
 
 protected:
 	void BuildWindow1();
@@ -75,18 +78,15 @@ protected:
 	void Close();
 	void Help();
 
-	void OnCraftButtonClick();
-	void OnFrameHover(UINewItemFrame* pItemFrame, sITEM* pItem);
 	void OnMainFrameHover(UINewItemFrame* pItemFrame, sITEM* pItem);
-	void OnPutRecipe(UINewItemFrame* pItemFrame);
+	void OnFrameHover(UINewItemFrame* pItemFrame, sITEM* pItem);
+	void OnCraftButtonClick();
 	void OnPreviewHover(sITEM* pItem);
 	void OnPickRecipe();
 
 	void ResetRuneFrames();
 
 private:
-	UINewWindow* pWindow1;
-	char StoneCode[3][32];
 	vector<sITEM> vResultItems;
 	int Price;
 };

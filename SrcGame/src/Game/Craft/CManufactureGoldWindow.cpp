@@ -268,7 +268,7 @@ void CManufactureGoldWindow::OnCraftButtonClick()
 
 void CManufactureGoldWindow::OnFrameHover(UINewItemFrame* pItemFrame, sITEM* pItem)
 {
-if (!pItemFrame || !pItem)
+	if (!pItemFrame || !pItem)
 		return;
 
 	bool canPut = false;
@@ -292,8 +292,10 @@ if (!pItemFrame || !pItem)
 void CManufactureGoldWindow::OnMainFrameHover(UINewItemFrame* pItemFrame, sITEM* pItem)
 {
 	if (!pItemFrame || !pItem)
+	{
 		return;
-
+	}
+	
 	if (pItem->Flag)
 	{
 		DWORD itemCode = (pItem->CODE & sinITEM_MASK2);
@@ -301,15 +303,25 @@ void CManufactureGoldWindow::OnMainFrameHover(UINewItemFrame* pItemFrame, sITEM*
 		if (itemCode == sinDR1 || itemCode == sinOA2 || itemCode == sinDB1 || itemCode == sinDG1 || itemCode == sinWP1 || itemCode == sinWS2 || itemCode == sinWA1 ||
 			itemCode == sinWT1 || itemCode == sinWC1 || itemCode == sinWS1 || itemCode == sinWM1 || itemCode == sinWH1 || itemCode == sinDA1 || itemCode == sinDA2 ||
 			itemCode == sinDS1 || itemCode == sinOR1 || itemCode == sinOA1 || itemCode == sinOM1 || itemCode == sinOE1)
+		{
 			pItemFrame->setPutItem(true);
-		else
+		}
+		else 
+		{
 			pItemFrame->setPutItem(false);
+		}
+			
 
 	}
-	else if (pItemFrame->getItem()->Flag)
+	else if (pItemFrame->getItem()->Flag) 
+	{
 		pItemFrame->setPutItem(true);
-	else
+	}
+	else 
+	{
 		pItemFrame->setPutItem(false);
+	}
+		
 }
 
 void CManufactureGoldWindow::OnPutRecipe(UINewItemFrame* pItemFrame)
