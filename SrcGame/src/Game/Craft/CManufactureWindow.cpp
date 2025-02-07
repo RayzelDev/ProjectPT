@@ -134,7 +134,7 @@ void CManufactureWindow::BuildWindow1()
 	pWindow1->AddElement(new UINewButton(0, "game\\images\\Craft\\xxx.png", "game\\craft\\Craft\\Button.bmp", 170, 133, true, false, std::bind(&CManufactureWindow::OnCraftButtonClick, this)));//
 
 	vector<POINT> FramePos = {
-		{249, 115},  {224, 146}, {274, 146},
+		{245, 115},  {220, 146}, {270, 146},
 	};
 
 	int count = 0;
@@ -145,7 +145,7 @@ void CManufactureWindow::BuildWindow1()
 		pWindow1->AddElement(pItemFrame);
 	}
 
-	auto pMainFrame = new UINewItemFrame(Craft_Receita, 68, 99, 67, 89);
+	auto pMainFrame = new UINewItemFrame(Craft_Receita, 65, 99, 67, 89);
 	pMainFrame->setHover(std::bind(&CManufactureWindow::OnMainFrameHover, this, pMainFrame, &MouseItem));
 	pMainFrame->setPutFunc(std::bind(&CManufactureWindow::OnPutRecipe, this, pMainFrame));
 	pMainFrame->setPickFunc(std::bind(&CManufactureWindow::OnPickRecipe, this));
