@@ -1741,6 +1741,14 @@ void cINVENTORY::RButtonDown(int x, int y)
 			}
 		}
 	}
+	else if (CManufactureGoldWindow::getInstance()->isOpen()) //Craft por GOLD
+	{
+		CHATGAMEHANDLE->AddChatBoxTextEx(EChatColor::CHATCOLOR_Notice, "> Entrou Aqui CRAFT GOLD!");
+	}
+	else if (CManufactureWindow::getInstance()->isOpen()) //Craft por COIN
+	{
+		CHATGAMEHANDLE->AddChatBoxTextEx(EChatColor::CHATCOLOR_Notice, "> Entrou Aqui CRAFT COIN!");
+	}
 	else if (cCraftItem.OpenFlag) // Mix window
 	{
 		if (SelectInvenItemIndex)
