@@ -19,15 +19,15 @@ const char* InfoMapa[12] = {
 };
 const char* FieldNum[12][4] = {
 	//Nº   Field	Level   Nome
-	{ "0","3",		"110",	"Ricarten"},//ok
-	{ "1","21",		"110",	"Pillay"},//ok
-	{ "2","2",		"110",	"Jardim da Liberdade"},//ok
-	{ "3","36",		"110",	"Caverna de Chefes"},//ok	
-	{ "4","11",		"110",	"CBA - Mapa de Eventos"},//ok
-	{ "5","25",		"110",	"Caverna das Abelhas"},//ok
-	{ "6","26",		"110",	"Santuario Sombrio"},//ok
-	{ "7","40",		"110",	"Torre sem Fim 1° Andar"},//ok
-	{ "8","34",		"110",	"Lago da Ganancia"},//ok
+	{ "0","3",		"80",	"Ricarten"},//ok
+	{ "1","21",		"80",	"Pillai"},//ok
+	{ "2","2",		"80",	"Jardim da Liberdade"},//ok
+	{ "3","36",		"90",	"Caverna de Chefes"},//ok	
+	{ "4","11",		"80",	"CBA - Mapa de Eventos"},//ok
+	{ "5","25",		"80",	"Caverna das Abelhas"},//ok
+	{ "6","26",		"80",	"Santuario Sombrio"},//ok
+	{ "7","40",		"100",	"Torre sem Fim 1° Andar"},//ok
+	{ "8","34",		"80",	"Lago da Ganancia"},//ok
 	{ "9","50",		"130",	"Núcleo de Ferro"},//ok
 	{ "10","36",	"200",	"Mapa Vazio"},//ok
 	
