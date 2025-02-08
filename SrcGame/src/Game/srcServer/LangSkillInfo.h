@@ -905,7 +905,7 @@ NULL, REIPVP, 0, 0 },
 	{ 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0, 0 },
 	NULL, TOPLVL, 0, 0 },
 
-{ "Vip", "+ 2% de Ataque + Beneficios (comandos /vip)",
+{ "Vip", "+ 2% de Ataque \n+ 20% de Exp \n+ Comandos /vip",
 0, 0, 0, 0, 0,
 	{ 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0, 0 },
 	NULL, VIPPLAYER, 0, 0 },
