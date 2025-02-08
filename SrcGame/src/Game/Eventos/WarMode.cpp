@@ -103,8 +103,8 @@ int MODOWAR::ModoPVP(bool arena)
 		{
 			ModoPvPTimer = GetTickCount();
 
-			TitleBox::GetInstance()->SetText("Modo Matança Ativado!", 3);
-			CHATBOX->AddMessage("Modo PK> 10% de Drop e EXP adicional!", EChatColor::CHATCOLOR_Global);
+			TitleBox::GetInstance()->SetText("Modo PK Ativado!", 3);
+			CHATBOX->AddMessage("Modo PK> 10% de Drop e Exp adicional!", EChatColor::CHATCOLOR_Global);
 
 			PLayerPvP = TRUE;
 
@@ -135,8 +135,8 @@ int MODOWAR::ModoPVP(bool arena)
 			{
 				//DESATIVAR WarMode
 
-				TitleBox::GetInstance()->SetText("Modo Matança Desativado!", 3);
-				CHATBOX->AddMessage("Modo PVP> Drop adicional desativada.", EChatColor::CHATCOLOR_Global);
+				TitleBox::GetInstance()->SetText("Modo PK Desativado!", 3);
+				CHATBOX->AddMessage("Modo PK> Drop e Exp adicional desativados.", EChatColor::CHATCOLOR_Global);
 			}
 
 			if (PLayerPvP) 

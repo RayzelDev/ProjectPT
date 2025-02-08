@@ -910,6 +910,11 @@ NULL, REIPVP, 0, 0 },
 	{ 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0, 0 },
 	NULL, VIPPLAYER, 0, 0 },
 
+{ "Modo PK", "+ 10% de Drop \n+ 10% de Exp",
+0, 0, 0, 0, 0,
+	{ 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0, 0 },
+	NULL, BUFF_WARMODE, 0, 0 },
+
 { "Booster HP", "Regeneração HP + 5.",
 0, 0, 0, 0, 0,
 { 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0, 0 },
