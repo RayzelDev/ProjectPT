@@ -28,7 +28,7 @@ const char* FieldNum[12][4] = {
 	{ "6","26",		"80",	"Santuario Sombrio"},//ok
 	{ "7","40",		"100",	"Torre sem Fim 1° Andar"},//ok
 	{ "8","34",		"80",	"Lago da Ganancia"},//ok
-	{ "9","50",		"130",	"Núcleo de Ferro"},//ok
+	{ "9","51",		"80",	"Abismo do Mar"},//ok
 	{ "10","36",	"200",	"Mapa Vazio"},//ok
 	
 

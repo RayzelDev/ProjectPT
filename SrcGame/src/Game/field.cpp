@@ -1801,9 +1801,9 @@ int InitField()
 	sField[cnt].BackImageCode[2]= FIELD_BACKIMAGE_NIGHTSNOW;
 	sField[cnt].BackMusicCode	= BGM_CODE_ICE;
 	sField[cnt].ServerCode		= PLAY_SERVER_CODE_EXTEND;
-	sField[ cnt ].SetCenterPos( -20699, -4205 );
-	sField[ cnt ].AddStartPoint( -20699, -4205 );
-	sField[ cnt ].LimitLevel = 130;
+	sField[ cnt ].SetCenterPos(-22941, 5723);
+	sField[ cnt ].AddStartPoint( -22941, 5723 );
+	sField[ cnt ].LimitLevel = 80;
 	cnt++;
 
 	//sField[ cnt ].SetName( "old_forest\\old_fore-3.ase", "old_fore-3" );
