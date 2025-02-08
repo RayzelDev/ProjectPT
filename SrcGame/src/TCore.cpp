@@ -6,30 +6,30 @@ char Text[12][32];
 const char* InfoMapa[12] = {
 	"Cidade Tempskron",
 	"Cidade Moryons",
-	"Ouro",
-	"Chefes do Jogo", 
-	"Mapa de Eventos",
-	"Mapa de UP 110 ao 145",
-	"Mapa de UP 110 ao 145",
-	"Itens 115/120 + Vl 110-120/120-130", 
-	"Sheltons/Crafts/Barra de Latão",
-	"Itens 125 + Vl 130-140/140-145",
-	"Bosses - Bosses - Bosses",
+	"Mapa para UP e Drop",
+	"Mapa para UP e Drop", 
+	"Mapa para UP e Drop",
+	"Mapa para UP e Drop",
+	"Mapa para UP e Drop",
+	"Mapa para UP e Drop", 
+	"Mapa para UP e Drop",
+	"Mapa para UP e Drop",
+	"Mapa para UP e Drop",
 
 };
 const char* FieldNum[12][4] = {
 	//Nº   Field	Level   Nome
 	{ "0","3",		"80",	"Ricarten"},//ok
 	{ "1","21",		"80",	"Pillai"},//ok
-	{ "2","2",		"80",	"Jardim da Liberdade"},//ok
-	{ "3","36",		"90",	"Caverna de Chefes"},//ok	
-	{ "4","11",		"80",	"CBA - Mapa de Eventos"},//ok
-	{ "5","25",		"80",	"Caverna das Abelhas"},//ok
-	{ "6","26",		"80",	"Santuario Sombrio"},//ok
-	{ "7","40",		"100",	"Torre sem Fim 1° Andar"},//ok
-	{ "8","34",		"80",	"Lago da Ganancia"},//ok
+	{ "2","51",		"80",	"Abismo do Mar"},//ok
+	{ "3","51",	    "80",	"Abismo do Mar"},//ok	
+	{ "4","51",		"80",	"Abismo do Mar"},//ok
+	{ "5","51",		"80",	"Abismo do Mar"},//ok
+	{ "6","51",		"80",	"Abismo do Mar"},//ok
+	{ "7","51",		"80",	"Abismo do Mar"},//ok
+	{ "8","51",		"80",	"Abismo do Mar"},//ok
 	{ "9","51",		"80",	"Abismo do Mar"},//ok
-	{ "10","36",	"200",	"Mapa Vazio"},//ok
+	{ "10","51",	"80",	"Abismo do Mar"},//ok
 	
 
 };
@@ -186,11 +186,11 @@ void TCORE::Draw() {
 
 			DrawImage(imagens[TOWN], smScreenWidth / 2 - 223, basey + 42, 40, 13);
 			DrawImage(imagens[TOWN], smScreenWidth / 2 - 223, basey + 62, 40, 13);
-			DrawImage(imagens[GOLD], smScreenWidth / 2 - 223, basey + 82, 40, 13);
-			DrawImage(imagens[HUNTPVP], smScreenWidth / 2 - 223, basey + 102, 40, 13);
+			DrawImage(imagens[HUNT], smScreenWidth / 2 - 223, basey + 82, 40, 13);
+			DrawImage(imagens[HUNT], smScreenWidth / 2 - 223, basey + 102, 40, 13);
 			DrawImage(imagens[HUNT], smScreenWidth / 2 - 223, basey + 122, 40, 13);
-			DrawImage(imagens[EXP], smScreenWidth / 2 - 223, basey + 142, 40, 13);
-			DrawImage(imagens[EXP], smScreenWidth / 2 - 223, basey + 162, 40, 13);
+			DrawImage(imagens[HUNT], smScreenWidth / 2 - 223, basey + 142, 40, 13);
+			DrawImage(imagens[HUNT], smScreenWidth / 2 - 223, basey + 162, 40, 13);
 			DrawImage(imagens[HUNT], smScreenWidth / 2 - 223, basey + 182, 40, 13);
 			DrawImage(imagens[HUNT], smScreenWidth / 2 - 223, basey + 202, 40, 13);
 		    DrawImage(imagens[HUNT], smScreenWidth / 2 - 223, basey + 222, 40, 13);
