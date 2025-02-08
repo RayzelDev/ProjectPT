@@ -92,22 +92,6 @@ void cSHOW_DMG::AddDef(DWORD Serial, Type Type, int value)
 			int mlevel = CHAR_LEVEL_MAX;
 			INT64 exp = FormulaDeExp(value);
 
-			//Logica para ADD Gold por Ataque
-			if (lpCurPlayer->smCharInfo.Money < 998999999)
-			{
-				INT64 goldAddAtk = exp / 200;
-				lpCurPlayer->smCharInfo.Money += goldAddAtk;
-				//sinPlusMoney2(goldAddAtk);
-				ReformCharForm();
-				SendSaveMoney();
-				//AddInvenMoney(goldAddAtk);
-				//SaveGameData();
-
-				char szTempGold[32] = { 0 };
-				NumLineComa64(goldAddAtk, szTempGold);
-				CHATGAMEHANDLE->AddChatBoxTextEx(EChatColor::CHATCOLOR_Notice, "> Você Ganhou %s de Gold!", szTempGold);
-			}
-
 			//Logica para ADD EXP por Ataque
 			if (exp64 < ExpLevelTable[mlevel])
 			{
