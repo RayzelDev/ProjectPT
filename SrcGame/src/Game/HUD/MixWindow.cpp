@@ -65,23 +65,36 @@ INT MixWindow::ReadMix()
 
 	// ARMAS
 
-	//Mix.ID = 1;
-	//Mix.mixName = "Ashen";
-	//Mix.description = u8"ATK MIN +7 - MAX +8; TAXA DE ATK +35; CRÍT. +2; MANA +10";
-	//Mix.mixType = MixType::Weapons;
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Transparo, 2);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Murki, 3);
-	//ix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 4);
+	Mix.ID = 1;
+	Mix.mixName = "Mix Inicial";
+	Mix.description = u8"ATK MIN +10 - MAX +10; TAXA DE ATK +50; CRÍT. +3; MANA +15";
+	Mix.mixType = MixType::Weapons;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 12);
 
-	//allMix.push_back(Mix);
+	allMix.push_back(Mix);
+
 
 	Mix.ID = 2;
-	Mix.mixName = "Mix Ashen";
-	Mix.description = u8"ATK MIN +8 - MAX +9; TAXA DE ATK +40; CRÍT. +3; MANA +15";
+	Mix.mixName = "Mix Veterano";
+	Mix.description = u8"ATK MIN +20 - MAX +20; TAXA DE ATK +200; CRÍT. +5; MANA +50";
 	Mix.mixType = MixType::Weapons;
-	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Ordo, 9);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 3);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 5);
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Mirage, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 3;
+	Mix.mixName = "Mix Senhor da Guerra";
+	Mix.description = u8"ATK MIN +40 - MAX +40; TAXA DE ATK +300; CRÍT. +10; MANA +150";
+	Mix.mixType = MixType::Weapons;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Inferna, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 4;
+	Mix.mixName = "Mix dos Deuses";
+	Mix.description = u8"ATK MIN +80 - MAX +80; TAXA DE ATK +500; CRÍT. +20; MANA +200";
+	Mix.mixType = MixType::Weapons;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Enigma, 12);
 
 	allMix.push_back(Mix);
 
