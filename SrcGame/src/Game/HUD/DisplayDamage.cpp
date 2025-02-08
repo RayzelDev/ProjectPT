@@ -151,19 +151,19 @@ INT64 cSHOW_DMG::FormulaDeExp(INT64 exp)
 	}
 
 	//Fenix 20% chaPremiumitem?
-	if (false)
+	if (chaPremiumitem.m_PhenixPetTime > 0)
 	{
 		exp = exp + (exp * 0.2);
 	}
 
 	//VIP 20%
-	if (false)
+	if (lpCurPlayer->vipLevel > 0)
 	{
 		exp = exp + (exp * 0.2);
 	}
 
 	//Poção de Exp 30%
-	if (false)
+	if (chaPremiumitem.m_ExpUpPotionTime > 0)
 	{
 		exp = exp + (exp * 0.3);
 	}
