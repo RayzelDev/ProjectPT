@@ -90,56 +90,62 @@ void cSHOW_DMG::AddDef(DWORD Serial, Type Type, int value)
 			//Logica do Exp por Ataque
 			INT64 exp64 = CodeXorCharInfo_Exp();
 			int mlevel = CHAR_LEVEL_MAX;
+			INT64 exp = FormulaDeExp(value);
 
+			//Logica para ADD Gold por Ataque
+			if (lpCurPlayer->smCharInfo.Money < 998999999)
+			{
+				INT64 goldAddAtk = exp / 200;
+				lpCurPlayer->smCharInfo.Money += goldAddAtk;
+				//sinPlusMoney2(goldAddAtk);
+				ReformCharForm();
+				SendSaveMoney();
+				//AddInvenMoney(goldAddAtk);
+				//SaveGameData();
+
+				char szTempGold[32] = { 0 };
+				NumLineComa64(goldAddAtk, szTempGold);
+				CHATGAMEHANDLE->AddChatBoxTextEx(EChatColor::CHATCOLOR_Notice, "> Você Ganhou %s de Gold!", szTempGold);
+			}
+
+			//Logica para ADD EXP por Ataque
 			if (exp64 < ExpLevelTable[mlevel])
 			{
-				INT64 exp = FormulaDeExp(value);
-
-				if (lpCurPlayer->smCharInfo.Money < 998999999)
-				{
-					INT64 goldAddAtk = exp / 500;
-					lpCurPlayer->smCharInfo.Money += goldAddAtk;
-					char szTempGold[32] = { 0 };
-					NumLineComa64(goldAddAtk, szTempGold);
-					CHATGAMEHANDLE->AddChatBoxTextEx(EChatColor::CHATCOLOR_Notice, "> Você Ganhou %s de Gold!", szTempGold);
-				}
-				
 				exp64 += exp;
-				wsprintf(newDmg->Text, "Exp %d", exp);
+				wsprintf(newDmg->Text, "%d", value);
 				SetExp64(&lpCurPlayer->smCharInfo, exp64);
 				CodeXorCharInfo_Exp();
 				ReformCharForm();
 				char szTemp[32] = { 0 };
 				NumLineComa64(exp, szTemp);
 				CHATGAMEHANDLE->AddChatBoxTextEx(EChatColor::CHATCOLOR_Notice, "> Você Ganhou %s de experiência!", szTemp);
+
+				int Level = lpCurPlayer->smCharInfo.Level;
+				INT64 iexp = ExpLevelTable[Level];
+				int LevelTableSum = 547991164;
+
+				if (LevelTableSum != CheckarLevelTable())
+				{
+					DisconnectFlag = GetCurrentTime();
+					break;
+				}
+
+				while (iexp >= 0 && exp64 >= iexp && lpCurPlayer->smCharInfo.Level < CHAR_LEVEL_MAX)
+				{
+
+					lpCurPlayer->smCharInfo.Level++;
+					lpCurPlayer->smCharInfo.Next_Exp = ExpLevelTable[Level + 1];
+					StartEffect(lpCurPlayer->pX, lpCurPlayer->pY + 32 * fONE, lpCurPlayer->pZ, EFFECT_LEVELUP1);
+					esPlaySound(7, 400);
+					ReformCharForm();
+
+					SendPlayUpdateInfo();
+					SaveGameData();
+
+					Level = lpCurPlayer->smCharInfo.Level;
+					iexp = ExpLevelTable[Level];
+				}
 			}
-
-			int Level = lpCurPlayer->smCharInfo.Level;
-			INT64 iexp = ExpLevelTable[Level];
-			int LevelTableSum = 547991164;
-
-			if (LevelTableSum != CheckarLevelTable())
-			{
-				DisconnectFlag = GetCurrentTime();
-				break;
-			}
-
-			while (iexp >= 0 && exp64 >= iexp && lpCurPlayer->smCharInfo.Level < CHAR_LEVEL_MAX)
-			{
-
-				lpCurPlayer->smCharInfo.Level++;
-				lpCurPlayer->smCharInfo.Next_Exp = ExpLevelTable[Level + 1];
-				StartEffect(lpCurPlayer->pX, lpCurPlayer->pY + 32 * fONE, lpCurPlayer->pZ, EFFECT_LEVELUP1);
-				esPlaySound(7, 400);
-				ReformCharForm();
-
-				SendPlayUpdateInfo();
-				SaveGameData();
-
-				Level = lpCurPlayer->smCharInfo.Level;
-				iexp = ExpLevelTable[Level];
-			}
-
 			break;
 		}
 
@@ -160,7 +166,7 @@ INT64 cSHOW_DMG::FormulaDeExp(INT64 exp)
 		exp = exp + (exp * 0.1);
 	}
 
-	//Fenix 20%
+	//Fenix 20% chaPremiumitem?
 	if (false)
 	{
 		exp = exp + (exp * 0.2);
