@@ -1781,58 +1781,112 @@ std::string GetItemMixNameByCode(int code)
 	switch (code)
 	{
 	case 1:
-		pszMixName = "Mix Devine";
+		pszMixName = "Mix Inicial";
 		break;
 	case 2:
-		pszMixName = "Mix Ashen";
+		pszMixName = "Mix Veterano";
 		break;
 	case 3:
-		pszMixName = "Mix Devine";
+		pszMixName = "Mix Senhor da Guerra";
 		break;
 	case 4:
-		pszMixName = "Mix Ashen";
+		pszMixName = "Mix dos Deuses";
 		break;
 	case 5:
-		pszMixName = "Mix Devine";
+		pszMixName = "Mix Inicial";
 		break;
 	case 6:
-		pszMixName = "Mix Ashen";
+		pszMixName = "Mix Veterano";
 		break;
 	case 7:
-		pszMixName = "Mix Devine";
+		pszMixName = "Mix Senhor da Guerra";
 		break;
 	case 8:
-		pszMixName = "Mix Ashen";
+		pszMixName = "Mix dos Deuses";
 		break;
 	case 9:
-		pszMixName = "Mix Devine";
+		pszMixName = "Mix Inicial";
 		break;
 	case 10:
-		pszMixName = "Mix Ashen";
+		pszMixName = "Mix Veterano";
 		break;
 	case 11:
-		pszMixName = "Mix Devine";
+		pszMixName = "Mix Senhor da Guerra";
 		break;
 	case 12:
-		pszMixName = "Mix Ashen";
+		pszMixName = "Mix dos Deuses";
 		break;
 	case 13:
-		pszMixName = "Mix Devine";
+		pszMixName = "Mix Inicial";
 		break;
 	case 14:
-		pszMixName = "Mix Ashen";
+		pszMixName = "Mix Veterano";
 		break;
 	case 15:
-		pszMixName = "Mix Devine";
+		pszMixName = "Mix Senhor da Guerra";
 		break;
 	case 16:
-		pszMixName = "Mix Ashen";
+		pszMixName = "Mix dos Deuses";
 		break;
 	case 17:
-		pszMixName = "Mix Devine";
+		pszMixName = "Mix Inicial";
 		break;
 	case 18:
-		pszMixName = "Mix Ashen";
+		pszMixName = "Mix Veterano";
+		break;
+	case 19:
+		pszMixName = "Mix Senhor da Guerra";
+		break;
+	case 20:
+		pszMixName = "Mix dos Deuses";
+		break;
+	case 21:
+		pszMixName = "Mix Inicial";
+		break;
+	case 22:
+		pszMixName = "Mix Veterano";
+		break;
+	case 23:
+		pszMixName = "Mix Senhor da Guerra";
+		break;
+	case 24:
+		pszMixName = "Mix dos Deuses";
+		break;
+	case 25:
+		pszMixName = "Mix Inicial";
+		break;
+	case 26:
+		pszMixName = "Mix Veterano";
+		break;
+	case 27:
+		pszMixName = "Mix Senhor da Guerra";
+		break;
+	case 28:
+		pszMixName = "Mix dos Deuses";
+		break;
+	case 29:
+		pszMixName = "Mix Inicial";
+		break;
+	case 30:
+		pszMixName = "Mix Veterano";
+		break;
+	case 31:
+		pszMixName = "Mix Senhor da Guerra";
+		break;
+	case 32:
+		pszMixName = "Mix dos Deuses";
+		break;
+	case 33:
+		pszMixName = "Mix Inicial";
+		break;
+	case 34:
+		pszMixName = "Mix Veterano";
+		break;
+	case 35:
+		pszMixName = "Mix Senhor da Guerra";
+		break;
+	case 36:
+		pszMixName = "Mix dos Deuses";
 		break;
 	}
 
