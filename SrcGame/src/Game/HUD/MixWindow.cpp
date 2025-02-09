@@ -101,179 +101,275 @@ INT MixWindow::ReadMix()
 
 	// ARMADURAS E ROUPÕES
 
-	//Mix.ID = 3;
-	//Mix.mixName = "Ashen";
-	//Mix.description = u8"DEF. +80; ABS. +2.0; HP +10";
-	//Mix.mixType = MixType::Armors;
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Transparo, 2);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Murki, 3);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 4);
-
-	//allMix.push_back(Mix);
-
-	Mix.ID = 4;
-	Mix.mixName = "Mix Ashen";
-	Mix.description = u8"DEF. +120; ABS. +3.0; HP +15";
+	Mix.ID = 5;
+	Mix.mixName = "Mix Inicial";
+	Mix.description = u8"DEF. +150; ABS. +5.0; HP +50";
 	Mix.mixType = MixType::Armors;
-	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Ordo, 9);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 3);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 5);
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 6;
+	Mix.mixName = "Mix Veterano";
+	Mix.description = u8"DEF. +350; ABS. +9.0; HP +150";
+	Mix.mixType = MixType::Armors;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Mirage, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 7;
+	Mix.mixName = "Mix Senhor da Guerra";
+	Mix.description = u8"DEF. +750; ABS. +11.0; HP +250";
+	Mix.mixType = MixType::Armors;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Inferna, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 8;
+	Mix.mixName = "Mix dos Deuses";
+	Mix.description = u8"DEF. +1550; ABS. +20.0; HP +350";
+	Mix.mixType = MixType::Armors;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Enigma, 12);
 
 	allMix.push_back(Mix);
 
 	// ESCUDOS
 
-	//Mix.ID = 5;
-	//Mix.mixName = "Ashen";
-	//Mix.description = u8"BLOQUEIO +2%; ABS. +1.4; HP +10";
-	//Mix.mixType = MixType::Shields;
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Transparo, 2);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Murki, 3);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 4);
-
-	//allMix.push_back(Mix);
-
-	Mix.ID = 6;
-	Mix.mixName = "Mix Ashen";
-	Mix.description = u8"BLOQUEIO +3%; ABS. +2.0; HP +20";
+	Mix.ID = 9;
+	Mix.mixName = "Mix Inicial";
+	Mix.description = u8"BLOQUEIO +5%; ABS. +3.0; HP +50";
 	Mix.mixType = MixType::Shields;
-	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Ordo, 9);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 3);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 5);
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 10;
+	Mix.mixName = "Mix Veterano";
+	Mix.description = u8"BLOQUEIO +10%; ABS. +5.0; HP +150";
+	Mix.mixType = MixType::Shields;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Mirage, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 11;
+	Mix.mixName = "Mix Senhor da Guerra";
+	Mix.description = u8"BLOQUEIO +15%; ABS. +7.0; HP +250";
+	Mix.mixType = MixType::Shields;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Inferna, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 12;
+	Mix.mixName = "Mix dos Deuses";
+	Mix.description = u8"BLOQUEIO +25%; ABS. +10.0; HP +350";
+	Mix.mixType = MixType::Shields;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Enigma, 12);
 
 	allMix.push_back(Mix);
 
 
 	// ORBITAIS
 
-	//Mix.ID = 7;
-	//Mix.mixName = "Ashen";
-	//Mix.description = u8"DEF. +20; ABS. +1.4; HP +15, RES +45";
-	//Mix.mixType = MixType::Orbs;
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Transparo, 2);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Murki, 3);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 4);
-
-	//allMix.push_back(Mix);
-
-	Mix.ID = 8;
-	Mix.mixName = "Mix Ashen";
-	Mix.description = u8"DEF. +55; ABS. +2.0; HP +20, RES +60";
+	Mix.ID = 13;
+	Mix.mixName = "Mix Inicial";
+	Mix.description = u8"DEF. +155; ABS. +3.0; HP +50, RES +100";
 	Mix.mixType = MixType::Orbs;
-	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Ordo, 9);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Transparo, 2);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Murki, 3);
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 14;
+	Mix.mixName = "Mix Veterano";
+	Mix.description = u8"DEF. +255; ABS. +5.0; HP +150, RES +200";
+	Mix.mixType = MixType::Orbs;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Mirage, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 15;
+	Mix.mixName = "Mix Senhor da Guerra";
+	Mix.description = u8"DEF. +455; ABS. +7.0; HP +250, RES +300";
+	Mix.mixType = MixType::Orbs;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Inferna, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 16;
+	Mix.mixName = "Mix dos Deuses";
+	Mix.description = u8"DEF. +755; ABS. +15.0; HP +350, RES +500";
+	Mix.mixType = MixType::Orbs;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Enigma, 12);
 
 	allMix.push_back(Mix);
 
 	// BOTAS
 
-	//Mix.ID = 9;
-	//Mix.mixName = "Ashen";
-	//Mix.description = u8"DEF. +10; ABS. +1.2; VELOCIDADE +0.9; HP +5; MANA +10; RES +15";
-	//Mix.mixType = MixType::Boots;
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Transparo, 2);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Murki, 3);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 4);
-
-	//allMix.push_back(Mix);
-
-	Mix.ID = 10;
-	Mix.mixName = "Mix Ashen";
-	Mix.description = u8"DEF. +15; ABS. +1.8; VELOCIDADE +1.8; HP +10; MANA +15; RES +20";
+	Mix.ID = 17;
+	Mix.mixName = "Mix Inicial";
+	Mix.description = u8"DEF. +115; ABS. +5.0; VELOCIDADE +3.0; HP +50; MANA +45; RES +50";
 	Mix.mixType = MixType::Boots;
-	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Ordo, 9);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 3);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 5);
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 18;
+	Mix.mixName = "Mix Veterano";
+	Mix.description = u8"DEF. +255; ABS. +7.0; VELOCIDADE +4.0; HP +150; MANA +145; RES +150";
+	Mix.mixType = MixType::Boots;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Mirage, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 19;
+	Mix.mixName = "Mix Senhor da Guerra";
+	Mix.description = u8"DEF. +355; ABS. +10.0; VELOCIDADE +5.0; HP +250; MANA +250; RES +250";
+	Mix.mixType = MixType::Boots;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Inferna, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 20;
+	Mix.mixName = "Mix do Deuses";
+	Mix.description = u8"DEF. +555; ABS. +15.0; VELOCIDADE +7.0; HP +350; MANA +350; RES +350";
+	Mix.mixType = MixType::Boots;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Enigma, 12);
 
 	allMix.push_back(Mix);
 
 
 	// LUVAS
 
-	//Mix.ID = 11;
-	//Mix.mixName = "Ashen";
-	//Mix.description = u8"DEF. +10; ABS. +1.0; HP +5; MANA +10; RES +15;";
-	//Mix.mixType = MixType::Gloves;
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Transparo, 2);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Murki, 3);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 4);
-
-	//allMix.push_back(Mix);
-
-	Mix.ID = 12;
-	Mix.mixName = "Mix Ashen";
-	Mix.description = u8"DEF. +30; ABS. +2.0; HP +10; MANA +15; RES +20";
+	Mix.ID = 21;
+	Mix.mixName = "Mix Inicial";
+	Mix.description = u8"DEF. +130; ABS. +4.0; HP +50; MANA +50; RES +50";
 	Mix.mixType = MixType::Gloves;
-	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Ordo, 9);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 3);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 5);
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 22;
+	Mix.mixName = "Mix Veterano";
+	Mix.description = u8"DEF. +230; ABS. +6.0; HP +120; MANA +150; RES +150";
+	Mix.mixType = MixType::Gloves;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Mirage, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 23;
+	Mix.mixName = "Mix Senhor da Guerra";
+	Mix.description = u8"DEF. +330; ABS. +8.0; HP +250; MANA +250; RES +250";
+	Mix.mixType = MixType::Gloves;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Inferna, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 24;
+	Mix.mixName = "Mix dos Deuses";
+	Mix.description = u8"DEF. +530; ABS. +12.0; HP +350; MANA +350; RES +350";
+	Mix.mixType = MixType::Gloves;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Enigma, 12);
 
 	allMix.push_back(Mix);
 
 	// BRACELETES
 
-	//Mix.ID = 13;
-	//Mix.mixName = "Ashen";
-	//Mix.description = u8"DEF. +15; TAXA DE ATK +30; HP +5; MANA +10; RES +15";
-	//Mix.mixType = MixType::Bracelets;
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Transparo, 2);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Murki, 3);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 4);
-
-	//allMix.push_back(Mix);
-
-	Mix.ID = 14;
-	Mix.mixName = "Mix Ashen";
-	Mix.description = u8"DEF. +25; TAXA DE ATK +40; HP +10; MANA +15; RES +20";
+	Mix.ID = 25;
+	Mix.mixName = "Mix Inicial";
+	Mix.description = u8"DEF. +125; TAXA DE ATK +140; HP +50; MANA +55; RES +50";
 	Mix.mixType = MixType::Bracelets;
-	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Ordo, 9);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 3);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 5);
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 26;
+	Mix.mixName = "Mix Veterano";
+	Mix.description = u8"DEF. +250; TAXA DE ATK +240; HP +150; MANA +155; RES +150";
+	Mix.mixType = MixType::Bracelets;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Mirage, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 27;
+	Mix.mixName = "Mix Senhor da Guerra";
+	Mix.description = u8"DEF. +350; TAXA DE ATK +350; HP +250; MANA +255; RES +250";
+	Mix.mixType = MixType::Bracelets;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Inferna, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 28;
+	Mix.mixName = "Mix dos Deuses";
+	Mix.description = u8"DEF. +550; TAXA DE ATK +550; HP +350; MANA +355; RES +350";
+	Mix.mixType = MixType::Bracelets;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Enigma, 12);
 
 	allMix.push_back(Mix);
 
 	// AMULETOS
 
-	//Mix.ID = 15;
-	//Mix.mixName = "Ashen";
-	//Mix.description = u8"REG. de HP +0.4; REG. de MANA +0.8; HP +4; MANA +8; RES +12";
-	//Mix.mixType = MixType::Amulets;
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Transparo, 2);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Murki, 3);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 4);
-
-	//allMix.push_back(Mix);
-
-	Mix.ID = 16;
-	Mix.mixName = "Mix Ashen";
-	Mix.description = u8"REG. de HP +0.6; REG. de MANA +1.0; HP +6; MANA +10; RES +14";
+	Mix.ID = 29;
+	Mix.mixName = "Mix Inicial";
+	Mix.description = u8"REG. de HP +2.0; REG. de MANA +2.0; HP +50; MANA +50; RES +50";
 	Mix.mixType = MixType::Amulets;
-	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Ordo, 9);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 3);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 5);
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 30;
+	Mix.mixName = "Mix Veterano";
+	Mix.description = u8"REG. de HP +3.0; REG. de MANA +4.0; HP +150; MANA +150; RES +150";
+	Mix.mixType = MixType::Amulets;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Mirage, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 31;
+	Mix.mixName = "Mix Senhor da Guerra";
+	Mix.description = u8"REG. de HP +5.0; REG. de MANA +5.0; HP +250; MANA +250; RES +250";
+	Mix.mixType = MixType::Amulets;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Inferna, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 32;
+	Mix.mixName = "Mix dos Deuses";
+	Mix.description = u8"REG. de HP +7.0; REG. de MANA +7.0; HP +350; MANA +350; RES +350";
+	Mix.mixType = MixType::Amulets;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Enigma, 12);
 
 	allMix.push_back(Mix);
 
 	// ANÉIS
 
-	//Mix.ID = 17;
-	//Mix.mixName = "Ashen";
-	//Mix.description = u8"REG. de HP +0.4; HP +2; MANA +6";
-	//Mix.mixType = MixType::Rings;
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Transparo, 2);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Murki, 3);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 4);
-
-	//allMix.push_back(Mix);
-
-	Mix.ID = 18;
-	Mix.mixName = "Mix Ashen";
-	Mix.description = u8"REG. de HP +1.2; REG. de MP +1.4; HP +75; MANA +75; RES +75; Tx de Atk +150";
+	Mix.ID = 33;
+	Mix.mixName = "Mix Inicial";
+	Mix.description = u8"REG. de HP +2.0; REG. de MP +2.0; HP +75; MANA +75; RES +75; Tx de Atk +150";
 	Mix.mixType = MixType::Rings;
-	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Ordo, 9);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Devine, 3);
-	//Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 5);
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 34;
+	Mix.mixName = "Mix Veterano";
+	Mix.description = u8"REG. de HP +3.0; REG. de MP +3.0; HP +155; MANA +175; RES +175; Tx de Atk +250";
+	Mix.mixType = MixType::Rings;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Mirage, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 35;
+	Mix.mixName = "Mix Senhor da Guerra";
+	Mix.description = u8"REG. de HP +4.0; REG. de MP +4.0; HP +255; MANA +275; RES +275; Tx de Atk +350";
+	Mix.mixType = MixType::Rings;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Inferna, 12);
+
+	allMix.push_back(Mix);
+
+	Mix.ID = 36;
+	Mix.mixName = "Mix dos Deuses";
+	Mix.description = u8"REG. de HP +5.0; REG. de MP +5.0; HP +355; MANA +375; RES +375; Tx de Atk +450";
+	Mix.mixType = MixType::Rings;
+	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Enigma, 12);
 
 	allMix.push_back(Mix);
 
@@ -296,7 +392,7 @@ void MixWindow::OpenNpc(bool* p_open)
 	ImGui::StyleColorArmageddon();
 
 
-	if (ImGui::Begin("Lista de Mix - Priston Tale", p_open, ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoCollapse))
+	if (ImGui::Begin("Lista de Mix - Project Priston Tale", p_open, ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoCollapse))
 	{
 		ImGuiTabBarFlags tab_bar_flags = ImGuiTabBarFlags_None;
 
