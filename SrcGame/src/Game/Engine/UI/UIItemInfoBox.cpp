@@ -376,7 +376,7 @@ namespace UI
 		vAgeSheltoms[20] = { 0, 0, 0, 0, 0, 0, 0, 23, 23, 19, 15, 11, 7, 3, 0, 0 };
 
 		// Quantidade de sheltons utilizados no mix
-		vMixSheltoms[1] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0 };
+		vMixSheltoms[1] = { 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0 };
 		vMixSheltoms[2] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0 };
 		vMixSheltoms[3] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0 };
 		vMixSheltoms[4] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0, 0 };

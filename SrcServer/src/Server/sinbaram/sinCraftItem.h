@@ -25,13 +25,14 @@
 #define   SIN_ADD_PERCENT			2
 
 
-// Mix 5 cel Armas
+// Mix Inicial Armas 12 Celestos
 { 1, { sinWA1, sinWC1, sinWH1, sinWM1, sinWP1, sinWS1, sinWS2, sinWT1 },
-	{ 3, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0 },
-	{ SIN_ADD_DAMAGE_MIN, SIN_ADD_DAMAGE_MAX, SIN_ADD_ATTACK_RATE, SIN_ADD_CRITICAL, SIN_ADD_LIFE, SIN_ADD_MANA, 0, 0 },
-	{ 8, 8, 40, 3, 25, 25, 0, 0 },
-	{ SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_PERCENT, SIN_ADD_NUM, SIN_ADD_NUM, 0, 0 },
-	"+8 de Poder de Ataque Min\r+8 de Poder de Ataque Max\r+40 de Taxa de Ataque\r+2 de Crítico\r+25 de HP\r+25 de Mana\r"},
+// Lucidi, Sereno, Fadeo, Spark, Raidente, Transparo, Murki, Devine, Celesto, Mirage, Inferna, Enigma, Bellum, Ordo
+	{ 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0 },
+	{ SIN_ADD_DAMAGE_MIN, SIN_ADD_DAMAGE_MAX, SIN_ADD_ATTACK_RATE, SIN_ADD_CRITICAL, SIN_ADD_MANA,0 , 0, 0 },
+	{ 10, 10, 50, 3, 15, 0, 0, 0 },
+	{ SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, 0, 0, 0 },
+	"+10 de Poder de Ataque Min\r+10 de Poder de Ataque Max\r+50 de Taxa de Ataque\r+3 de Crítico\r+15 de Mana\r"},
 
 	// Mix 9 cel Armas
 { 2, { sinWA1, sinWC1, sinWH1, sinWM1, sinWP1, sinWS1, sinWS2, sinWT1 },
