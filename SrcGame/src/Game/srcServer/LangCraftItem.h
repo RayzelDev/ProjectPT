@@ -34,30 +34,42 @@
 	{ SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, 0, 0, 0 },
 	"+10 de Poder de Ataque Min\r+10 de Poder de Ataque Max\r+50 de Taxa de Ataque\r+3 de Crítico\r+15 de Mana\r"},
 
-	// Mix 9 cel Armas
+// Mix Veterano 12 Mirages Armas
 { 2, { sinWA1, sinWC1, sinWH1, sinWM1, sinWP1, sinWS1, sinWS2, sinWT1 },
-{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9 },
-{ SIN_ADD_DAMAGE_MIN, SIN_ADD_DAMAGE_MAX, SIN_ADD_ATTACK_RATE, SIN_ADD_CRITICAL, SIN_ADD_LIFE, SIN_ADD_MANA, 0, 0 },
-{ 24, 24, 120, 7, 100, 100, 0, 0 },
-{ SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_PERCENT, SIN_ADD_NUM, SIN_ADD_NUM, 0, 0 },
-"+24 de Poder de Ataque Min\r+24 de Poder de Ataque Max\r+120 de Taxa de Ataque\r+7 de Crítico\r+100 de HP\r+100 de Mana\r" },
+// Lucidi, Sereno, Fadeo, Spark, Raidente, Transparo, Murki, Devine, Celesto, Mirage, Inferna, Enigma, Bellum, Ordo
+	{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0 },
+	{ SIN_ADD_DAMAGE_MIN, SIN_ADD_DAMAGE_MAX, SIN_ADD_ATTACK_RATE, SIN_ADD_CRITICAL, SIN_ADD_MANA,0 , 0, 0 },
+	{ 20, 20, 200, 5, 50, 0, 0, 0 },
+	{ SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, 0, 0, 0 },
+	"+20 de Poder de Ataque Min\r+20 de Poder de Ataque Max\r+200 de Taxa de Ataque\r+5 de Crítico\r+50 de Mana\r" },
 
-// Mix 5 cel Armaduras
-{ 3, {sinDA1, sinDA2, 0, 0, 0, 0, 0, 0},
-{ 3, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0 },
-{ SIN_ADD_DEFENCE, SIN_ADD_BLOCK_RATE, SIN_ADD_LIFE, 0, 0, 0, 0, 0 },
-{ 150, 2, 50, 0, 0, 0, 0, 0 },
-{ SIN_ADD_NUM, SIN_ADD_PERCENT, SIN_ADD_NUM, 0, 0, 0, 0, 0 },
-"+80 de Defesa\r+2% de Bloqueio\r+50 de Vida\r" },
+// Mix Senhor da Guerra 12 Infernas Armas
+{ 3, { sinWA1, sinWC1, sinWH1, sinWM1, sinWP1, sinWS1, sinWS2, sinWT1 },
+// Lucidi, Sereno, Fadeo, Spark, Raidente, Transparo, Murki, Devine, Celesto, Mirage, Inferna, Enigma, Bellum, Ordo
+	{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0 },
+	{ SIN_ADD_DAMAGE_MIN, SIN_ADD_DAMAGE_MAX, SIN_ADD_ATTACK_RATE, SIN_ADD_CRITICAL, SIN_ADD_MANA,0 , 0, 0 },
+	{ 40, 40, 300, 10, 150, 0, 0, 0 },
+	{ SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, 0, 0, 0 },
+	"+40 de Poder de Ataque Min\r+40 de Poder de Ataque Max\r+300 de Taxa de Ataque\r+10 de Crítico\r+150 de Mana\r" },
+
+// Mix dos Deuses 12 Enigmas Armas
+{ 4, { sinWA1, sinWC1, sinWH1, sinWM1, sinWP1, sinWS1, sinWS2, sinWT1 },
+// Lucidi, Sereno, Fadeo, Spark, Raidente, Transparo, Murki, Devine, Celesto, Mirage, Inferna, Enigma, Bellum, Ordo
+	{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0 },
+	{ SIN_ADD_DAMAGE_MIN, SIN_ADD_DAMAGE_MAX, SIN_ADD_ATTACK_RATE, SIN_ADD_CRITICAL, SIN_ADD_MANA,0 , 0, 0 },
+	{ 80, 80, 500, 20, 200, 0, 0, 0 },
+	{ SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, SIN_ADD_NUM, 0, 0, 0 },
+	"+80 de Poder de Ataque Min\r+80 de Poder de Ataque Max\r+500 de Taxa de Ataque\r+20 de Crítico\r+200 de Mana\r" },
+
 
 
 // Mix 9 cel Armaduras
-{ 4, {sinDA1, sinDA2, 0, 0, 0, 0, 0, 0},
-{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9 },
-{ SIN_ADD_DEFENCE, SIN_ADD_BLOCK_RATE, SIN_ADD_LIFE, 0, 0, 0, 0, 0 },
-{ 250, 7, 100, 0, 0, 0, 0, 0 },
-{ SIN_ADD_NUM, SIN_ADD_PERCENT, SIN_ADD_NUM, 0, 0, 0, 0, 0 },
-"+250 de Defesa\r+7% de Bloqueio\r+100 de Vida\r" },
+//{ 4, {sinDA1, sinDA2, 0, 0, 0, 0, 0, 0},
+//{ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9 },
+//{ SIN_ADD_DEFENCE, SIN_ADD_BLOCK_RATE, SIN_ADD_LIFE, 0, 0, 0, 0, 0 },
+//{ 250, 7, 100, 0, 0, 0, 0, 0 },
+//{ SIN_ADD_NUM, SIN_ADD_PERCENT, SIN_ADD_NUM, 0, 0, 0, 0, 0 },
+//"+250 de Defesa\r+7% de Bloqueio\r+100 de Vida\r" },
 
 // Mix 5 cel Escudos
 { 5, {sinDS1, 0, 0, 0, 0, 0, 0, 0},
