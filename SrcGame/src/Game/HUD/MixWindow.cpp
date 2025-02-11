@@ -343,7 +343,7 @@ INT MixWindow::ReadMix()
 
 	Mix.ID = 33;
 	Mix.mixName = "Mix Inicial";
-	Mix.description = u8"REG. de HP +2.0; REG. de MP +2.0; HP +75; MANA +75; RES +75; Tx de Atk +150";
+	Mix.description = u8"REG. de HP +2.0; REG. de MP +2.0; HP +75; MANA +75; RES +75";
 	Mix.mixType = MixType::Rings;
 	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Celesto, 12);
 
@@ -351,7 +351,7 @@ INT MixWindow::ReadMix()
 
 	Mix.ID = 34;
 	Mix.mixName = "Mix Veterano";
-	Mix.description = u8"REG. de HP +3.0; REG. de MP +3.0; HP +155; MANA +175; RES +175; Tx de Atk +250";
+	Mix.description = u8"REG. de HP +3.0; REG. de MP +3.0; HP +155; MANA +175; RES +175";
 	Mix.mixType = MixType::Rings;
 	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Mirage, 12);
 
@@ -359,7 +359,7 @@ INT MixWindow::ReadMix()
 
 	Mix.ID = 35;
 	Mix.mixName = "Mix Senhor da Guerra";
-	Mix.description = u8"REG. de HP +4.0; REG. de MP +4.0; HP +255; MANA +275; RES +275; Tx de Atk +350";
+	Mix.description = u8"REG. de HP +4.0; REG. de MP +4.0; HP +255; MANA +275; RES +275";
 	Mix.mixType = MixType::Rings;
 	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Inferna, 12);
 
@@ -367,7 +367,7 @@ INT MixWindow::ReadMix()
 
 	Mix.ID = 36;
 	Mix.mixName = "Mix dos Deuses";
-	Mix.description = u8"REG. de HP +5.0; REG. de MP +5.0; HP +355; MANA +375; RES +375; Tx de Atk +450";
+	Mix.description = u8"REG. de HP +5.0; REG. de MP +5.0; HP +355; MANA +375; RES +375";
 	Mix.mixType = MixType::Rings;
 	Mix.sheltonList[Mix.ID].emplace_back(Sheltons::Enigma, 12);
 
