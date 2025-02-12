@@ -354,26 +354,67 @@ namespace UI
 
 
 		// Quantidade de sheltons utilizados no aging
-		vAgeSheltoms[1] = { 0, 0, 2, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-		vAgeSheltoms[2] = { 0, 0, 4, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-		vAgeSheltoms[3] = { 0, 0, 6, 6, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-		vAgeSheltoms[4] = { 0, 0, 8, 8, 7, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-		vAgeSheltoms[5] = { 0, 0, 10, 10, 9, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-		vAgeSheltoms[6] = { 0, 0, 12, 12, 11, 7, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-		vAgeSheltoms[7] = { 0, 0, 14, 14, 13, 9, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0 };
-		vAgeSheltoms[8] = { 0, 0, 16, 16, 15, 11, 7, 3, 0, 0, 0, 0, 0, 0, 0, 0 };
-		vAgeSheltoms[9] = { 0, 0, 16, 18, 17, 13, 9, 5, 1, 0, 0, 0, 0, 0, 0, 0 };
-		vAgeSheltoms[10] = { 0, 0, 16, 20, 19, 15, 11, 7, 3, 0, 0, 0, 0, 0, 0, 0 };
-		vAgeSheltoms[11] = { 0, 0, 0, 20, 21, 17, 13, 9, 5, 1, 0, 0, 0, 0, 0, 0 };
-		vAgeSheltoms[12] = { 0, 0, 0, 20, 23, 19, 15, 11, 7, 3, 0, 0, 0, 0, 0, 0 };
-		vAgeSheltoms[13] = { 0, 0, 0, 0, 23, 21, 17, 13, 9, 5, 1, 0, 0, 0, 0, 0 };
-		vAgeSheltoms[14] = { 0, 0, 0, 0, 23, 23, 19, 15, 11, 7, 3, 0, 0, 0, 0, 0 };
-		vAgeSheltoms[15] = { 0, 0, 0, 0, 0, 23, 21, 17, 13, 9, 5, 1, 0, 0, 0, 0 };
-		vAgeSheltoms[16] = { 0, 0, 0, 0, 0, 23, 23, 19, 15, 11, 7, 3, 0, 0, 0, 0 };
-		vAgeSheltoms[17] = { 0, 0, 0, 0, 0, 0, 23, 21, 17, 13, 9, 5, 1, 0, 0, 0 };
-		vAgeSheltoms[18] = { 0, 0, 0, 0, 0, 0, 23, 23, 19, 15, 11, 7, 3, 0, 0, 0 };
-		vAgeSheltoms[19] = { 0, 0, 0, 0, 0, 0, 0, 23, 21, 17, 13, 9, 5, 1, 0, 0 };
-		vAgeSheltoms[20] = { 0, 0, 0, 0, 0, 0, 0, 23, 23, 19, 15, 11, 7, 3, 0, 0 };
+		vAgeSheltoms[1] = { 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[2] = { 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[3] = { 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[4] = { 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[5] = { 0, 0, 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[6] = { 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[7] = { 0, 0, 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[8] = { 0, 0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[9] = { 0, 0, 0, 0, 0, 0, 0, 0, 24, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[10] = { 0, 0, 0, 0, 0, 0, 0, 0, 28, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[11] = { 0, 0, 0, 0, 0, 0, 0, 0, 32, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[12] = { 0, 0, 0, 0, 0, 0, 0, 0, 36, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[13] = { 0, 0, 0, 0, 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 0, 0 }; 
+		vAgeSheltoms[14] = { 0, 0, 0, 0, 0, 0, 0, 0, 45, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[15] = { 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[16] = { 0, 0, 0, 0, 0, 0, 0, 0, 55, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[17] = { 0, 0, 0, 0, 0, 0, 0, 0, 60, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[18] = { 0, 0, 0, 0, 0, 0, 0, 0, 65, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[19] = { 0, 0, 0, 0, 0, 0, 0, 0, 71, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[20] = { 0, 0, 0, 0, 0, 0, 0, 0, 78, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[21] = { 0, 0, 0, 0, 0, 0, 0, 0, 85, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[22] = { 0, 0, 0, 0, 0, 0, 0, 0, 92, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[23] = { 0, 0, 0, 0, 0, 0, 0, 0, 99, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[24] = { 0, 0, 0, 0, 0, 0, 0, 0, 106, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[25] = { 0, 0, 0, 0, 0, 0, 0, 0, 114, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[26] = { 0, 0, 0, 0, 0, 0, 0, 0, 122, 0, 0, 0, 0, 0, 0, 0 }; 
+		vAgeSheltoms[27] = { 0, 0, 0, 0, 0, 0, 0, 0, 130, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[28] = { 0, 0, 0, 0, 0, 0, 0, 0, 138, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[29] = { 0, 0, 0, 0, 0, 0, 0, 0, 146, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[30] = { 0, 0, 0, 0, 0, 0, 0, 0, 154, 0, 0, 0, 0, 0, 0, 0 }; 
+		vAgeSheltoms[31] = { 0, 0, 0, 0, 0, 0, 0, 0, 163, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[32] = { 0, 0, 0, 0, 0, 0, 0, 0, 172, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[33] = { 0, 0, 0, 0, 0, 0, 0, 0, 182, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[34] = { 0, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[35] = { 0, 0, 0, 0, 0, 0, 0, 0, 202, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[36] = { 0, 0, 0, 0, 0, 0, 0, 0, 212, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[37] = { 0, 0, 0, 0, 0, 0, 0, 0, 224, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[38] = { 0, 0, 0, 0, 0, 0, 0, 0, 236, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[39] = { 0, 0, 0, 0, 0, 0, 0, 0, 248, 0, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[40] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 0, 0, 0, 0, 0, 0, 0 }; 
+		vAgeSheltoms[41] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 2, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[42] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 4, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[43] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 6, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[44] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 8, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[45] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 11, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[46] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 14, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[47] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 18, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[48] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 22, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[49] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 26, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[50] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 30, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[51] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 35, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[52] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 40, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[53] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 46, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[54] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 53, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[55] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 60, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[56] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 68, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[57] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 77, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[58] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 87, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[59] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 99, 0, 0, 0, 0, 0, 0 };
+		vAgeSheltoms[60] = { 0, 0, 0, 0, 0, 0, 0, 0, 260, 111, 0, 0, 0, 0, 0, 0 };
+		
 
 		// Quantidade de sheltons utilizados no mix
 		vMixSheltoms[1] = { 0, 0, 0, 0, 0, 0, 0, 0, 12, 0, 0, 0, 0, 0, 0, 0 };
@@ -4103,42 +4144,41 @@ namespace UI
 					const int ageLevel = cItemWrapper.sItemInfo.ItemAgingCount[0] ? cItemWrapper.sItemInfo.ItemAgingNum[0] + 1 : cItemWrapper.sItemInfo.ItemAgingNum[0];
 
 					//Render Sheltoms used for aging
-					// Removido o desenho dos sheltons usados para aging
-					//auto it = vAgeSheltoms.find(ageLevel);
-					//if (it != vAgeSheltoms.end())
-					//{
-					//	std::vector<int> sheltoms = it->second;
+					auto it = vAgeSheltoms.find(ageLevel);
+					if (it != vAgeSheltoms.end())
+					{
+						std::vector<int> sheltoms = it->second;
 
-					//	int iSheltomTypes = 0;
-					//	for (unsigned int iSheltomIndex = 0; iSheltomIndex < sheltoms.size(); iSheltomIndex++)
-					//		if (sheltoms[iSheltomIndex] > 0)
-					//			iSheltomTypes++;
+						int iSheltomTypes = 0;
+						for (unsigned int iSheltomIndex = 0; iSheltomIndex < sheltoms.size(); iSheltomIndex++)
+							if (sheltoms[iSheltomIndex] > 0)
+								iSheltomTypes++;
 
-					//	int iTotalWidth = iSheltomTypes * iSheltomWidth;
-					//	int iInitialOffset = (iItemInfoBoxWidth - iTotalWidth) / 2;
+						int iTotalWidth = iSheltomTypes * iSheltomWidth;
+						int iInitialOffset = (iItemInfoBoxWidth - iTotalWidth) / 2;
 
-					//	int iOffsetX = 0;
-					//	int iUniqueSheltomCount = 0;
+						int iOffsetX = 0;
+						int iUniqueSheltomCount = 0;
 
-					//	for (unsigned int iSheltomIndex = 0; iSheltomIndex < sheltoms.size(); iSheltomIndex++)
-					//	{
-					//		if (sheltoms[iSheltomIndex] > 0)
-					//		{
-					//			UI::ImageRender::Render(vSheltomImages[iSheltomIndex], iX + iInitialOffset + iOffsetX, iY + 5 + iSheltomYPosExtra + iYExtra, iSheltomWidth, iSheltomHeight, 0, 0, -1);
+						for (unsigned int iSheltomIndex = 0; iSheltomIndex < sheltoms.size(); iSheltomIndex++)
+						{
+							if (sheltoms[iSheltomIndex] > 0)
+							{
+								UI::ImageRender::Render(vSheltomImages[iSheltomIndex], iX + iInitialOffset + iOffsetX, iY + 5 + iSheltomYPosExtra + iYExtra, iSheltomWidth, iSheltomHeight, 0, 0, -1);
 
-					//			//7 - there is only 7 sheltom count text
-					//			paSheltomCountText[iUniqueSheltomCount]->SetText(FormatString("%d", sheltoms[iSheltomIndex]));
-					//			paSheltomCountText[iUniqueSheltomCount]->SetNoClip(TRUE);
-					//			paSheltomCountText[iUniqueSheltomCount]->SetBox(Rectangle2D(iInitialOffset + iOffsetX, iSheltomWidth + iSheltomYPosExtra + iYExtra, iSheltomWidth, iSheltomHeight));
-					//			paSheltomCountText[iUniqueSheltomCount]->SetHorizontalAlign(ALIGN_Center);
-					//			paSheltomCountText[iUniqueSheltomCount]->SetVerticalAlign(ALIGN_Center);
-					//			paSheltomCountText[iUniqueSheltomCount]->Render(iX, iY, RESOLUTION_WIDTH, RESOLUTION_HEIGHT, 0, 0);
+								//7 - there is only 7 sheltom count text
+								paSheltomCountText[iUniqueSheltomCount]->SetText(FormatString("%d", sheltoms[iSheltomIndex]));
+								paSheltomCountText[iUniqueSheltomCount]->SetNoClip(TRUE);
+								paSheltomCountText[iUniqueSheltomCount]->SetBox(Rectangle2D(iInitialOffset + iOffsetX, iSheltomWidth + iSheltomYPosExtra + iYExtra, iSheltomWidth, iSheltomHeight));
+								paSheltomCountText[iUniqueSheltomCount]->SetHorizontalAlign(ALIGN_Center);
+								paSheltomCountText[iUniqueSheltomCount]->SetVerticalAlign(ALIGN_Center);
+								paSheltomCountText[iUniqueSheltomCount]->Render(iX, iY, RESOLUTION_WIDTH, RESOLUTION_HEIGHT, 0, 0);
 
-					//			iOffsetX += iSheltomWidth;
-					//			iUniqueSheltomCount++;
-					//		}
-					//	}
-					//}
+								iOffsetX += iSheltomWidth;
+								iUniqueSheltomCount++;
+							}
+						}
+					}
 
 				}
 			}
