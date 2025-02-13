@@ -7,6 +7,7 @@
 #include <zlib.h>
 #include <Database/SQLConnection.h>
 #include <SrcServer/onserver.h>
+#include <Shop/DamageShop.h>
 
 extern Events::Questions* QuestionEvent;
 extern char* rsGetWord(char* q, char* p);
@@ -196,6 +197,13 @@ BOOL CServerCommand::OnPlayerCommand(rsPLAYINFO* pcUser, char* pszBuff)
 		{
 			Vip::GetInstance()->OpenNpc(pcUser, 1);
 		}
+	}
+
+	else if (ChatCommand("/mostrardamage", pszBuff))
+	{
+		auto damage = DamageShop::GetInstance()->getPlayerDamage(pcUser);
+
+		SERVERCHAT->SendChatEx(pcUser, CHATCOLOR_Error, "> Damage Atual: %d", damage);
 	}
 
 	return TRUE;

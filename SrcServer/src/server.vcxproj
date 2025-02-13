@@ -214,6 +214,7 @@
     <ClCompile Include="Server\Ranking\TopRanking.cpp" />
     <ClCompile Include="Server\Roleta\Roleta.cpp" />
     <ClCompile Include="Server\Security\Firewall.cpp" />
+    <ClCompile Include="Server\Shop\DamageShop.cpp" />
     <ClCompile Include="Server\Shop\NewShop.cpp" />
     <ClCompile Include="Server\Shop\NewShopTime.cpp" />
     <ClCompile Include="Server\sinbaram\haPremiumItem.cpp" />
@@ -283,6 +284,7 @@
     <ClInclude Include="Alerta.h" />
     <ClInclude Include="cReviewSkinHandler.h" />
     <ClInclude Include="cSkinChanger.h" />
+    <ClInclude Include="Server\Shop\DamageShop.h" />
     <ClInclude Include="RollDice.h" />
     <ClInclude Include="Server\Aging\RestaureItem.h" />
     <ClInclude Include="Server\AreaServer.h" />

@@ -102,6 +102,7 @@ void cSHOW_DMG::AddDef(DWORD Serial, Type Type, int value)
 				ReformCharForm();
 				char szTemp[32] = { 0 };
 				NumLineComa64(exp, szTemp);
+				MandaDamageProServer(value);
 				CHATGAMEHANDLE->AddChatBoxTextEx(EChatColor::CHATCOLOR_Notice, "> Você Ganhou %s de experiência!", szTemp);
 
 				int Level = lpCurPlayer->smCharInfo.Level;
@@ -140,6 +141,16 @@ void cSHOW_DMG::AddDef(DWORD Serial, Type Type, int value)
 		Damages.push_back(newDmg);
 	}
 }
+
+void cSHOW_DMG::MandaDamageProServer(INT64 damage)
+{
+	sDamagePlayer sPacket;
+	sPacket.size = sizeof(sPacket);
+	sPacket.code = PACKET_RECEBE_DAMAGE_CHAR;
+	sPacket.Damage = damage;
+	smWsockServer->Send((char*)&sPacket, sPacket.size, TRUE);
+}
+
 INT64 cSHOW_DMG::FormulaDeExp(INT64 exp)
 {
 	exp = exp * 2000;

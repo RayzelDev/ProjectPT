@@ -15,6 +15,13 @@ enum Type {
 	CriticalDamage,
 };
 
+struct sDamagePlayer
+{
+	int size;
+	int code;
+	int Damage;
+};
+
 class cSHOW_DMG
 {
 public:
@@ -33,6 +40,7 @@ public:
 	void AddDmg(int Dmg, DWORD Serial, Type Type);
 	void AddDef(DWORD Serial, Type Type, int value = 0);
 	void DrawDmg(DWORD TargetSerial, int x, int y);
+	void MandaDamageProServer(INT64 damage);
 	INT64 FormulaDeExp(INT64 exp);
 
 private:

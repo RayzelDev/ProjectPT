@@ -71,6 +71,7 @@ BOOL bMaintenanceMode = FALSE;
 #include <boost\\algorithm\\string\\predicate.hpp>
 #include "Shop\NewShop.h"
 #include "Shop\NewShopTime.h"
+#include "Shop\DamageShop.h"
 #include "Login\\ProcessLogin.h"
 #else
 
@@ -18540,6 +18541,9 @@ pRetry:
 			break;
 		case PACKET_CHATITEMLINK:
 			SERVERCHAT->HandlePacket(lpPlayInfo, (PacketItemLinkChat*)SockInfo->Buff);
+			break;
+		case PACKET_RECEBE_DAMAGE_CHAR:
+			DamageShop::GetInstance()->addDamageToPlayer(lpPlayInfo, (sDamagePlayer*)SockInfo->Buff);
 			break;
 		case PACKET_UPDATE_BOSSTIME:
 			SERVERCOMMAND->SendBossTime(lpPlayInfo, (PacketBossTimeUpdate*)SockInfo->Buff);
