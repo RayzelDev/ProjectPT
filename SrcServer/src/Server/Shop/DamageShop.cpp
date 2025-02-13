@@ -32,21 +32,25 @@ double DamageShop::getPlayerDamage(rsPLAYINFO* Player)
 
 void DamageShop::addDamageToPlayer(rsPLAYINFO* Player, sDamagePlayer* DamagePlayer)
 {
-	auto db = SQLConnection::GetConnection(DATABASEID_UserDB);
-
-	if (db && db->Open())
+	auto qtdDamage = getPlayerDamage(Player);
+	if (qtdDamage < 2000000000)
 	{
-		const char* const queryUpdate = "UPDATE UserDamage SET Damage+=? WHERE CharName=?";
-		auto damage = DamagePlayer->Damage;
+		auto db = SQLConnection::GetConnection(DATABASEID_UserDB);
 
-		if (db->Prepare(queryUpdate))
+		if (db && db->Open())
 		{
-			db->BindInputParameter(&damage, 1, PARAMTYPE_Integer);
-			db->BindInputParameter(Player->szName, 2, PARAMTYPE_String);
-			db->Execute();
-		}
+			const char* const queryUpdate = "UPDATE UserDamage SET Damage+=? WHERE CharName=?";
+			auto damage = DamagePlayer->Damage;
 
-		db->Close();
+			if (db->Prepare(queryUpdate))
+			{
+				db->BindInputParameter(&damage, 1, PARAMTYPE_Integer);
+				db->BindInputParameter(Player->szName, 2, PARAMTYPE_String);
+				db->Execute();
+			}
+
+			db->Close();
+		}
 	}
 }
 
