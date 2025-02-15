@@ -1,7 +1,7 @@
 #pragma once
 #include "character.h"
 
-#define	CHAR_LEVEL_MAX	110 // Nível maximo aqui
+#define	CHAR_LEVEL_MAX	145 // Nível maximo aqui
 
 #define sinNPC_SHOP				0x00000001
 #define sinNPC_MIX				0x00000002
