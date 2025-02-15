@@ -22952,7 +22952,7 @@ pRetry:
 					TopRanking::GetInstance()->LevelUp(lpPlayInfo);
 
 					// Se upou nivel 100 ou maior, avisa no global
-					if (lpTransCommand->LParam >= 140 && lpTransCommand->WParam == 0 && lpTransCommand->SParam == 0 && lpTransCommand->EParam == 0)
+					if (lpTransCommand->LParam >= 100 && lpTransCommand->WParam == 0 && lpTransCommand->SParam == 0 && lpTransCommand->EParam == 0)
 					{
 						SERVERCHAT->SendChatAllEx(EChatColor::CHATCOLOR_Global, "Aviso> %s chegou ao level %d!", lpPlayInfo->szName, lpPlayInfo->smCharInfo.Level);
 					}
