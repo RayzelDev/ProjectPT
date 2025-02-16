@@ -28,6 +28,7 @@ int sinbaram_Stop = 0;
 #include "..\Tcore.h"
 #include "Craft/CManufactureGoldWindow.h"
 #include "Craft/CManufactureWindow.h"
+#include "Eventos/InterfaceDamage.h"
 #include "..\RollDice.h"
 #endif
 
@@ -55,6 +56,7 @@ void sinInit() // na sua deve ta faltado referencia que vai nessa parte
 	g_PCBang_CreatePetSystem();
 	cPCBANGPet.Init();
 	WarMode.Init();
+	InterfaceDamage.Init();
 	REVIEWSKINWINDOW->Init();
 	chaSiege.init();
 	chaQuest.init();
@@ -229,6 +231,7 @@ void sinDraw()
 	dsDrawOffsetArray = dsARRAY_TOP;
 	TCORE::GetInstance()->Draw();
 	WarMode.Draw();
+	InterfaceDamage.Draw();
 	Settings::GetInstance()->Draw();
 
 	if (global) {
@@ -294,6 +297,7 @@ void sinProc(int Message)
 		chaQuest.LButtonDown(pCursorPos.x, pCursorPos.y);
 		chaPremiumitem.LButtonDown(pCursorPos.x, pCursorPos.y);
 		WarMode.Button();
+		InterfaceDamage.Button();
 		Settings::GetInstance()->Button();
 		CustomHud::GetInstance()->GotClick = true;
 		TCORE::GetInstance()->MouseIn();
@@ -399,6 +403,14 @@ void sinProc(int Message)
 				WarMode.Open();
 			else
 				WarMode.Close();
+		}
+
+		if (sinGetKeyClick('U'))
+		{
+			if (!InterfaceDamage.fOpen)
+				InterfaceDamage.Open();
+			else
+				InterfaceDamage.Close();
 		}
 
 		if (sinGetKeyClick('M'))

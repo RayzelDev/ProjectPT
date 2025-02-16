@@ -12,6 +12,13 @@ struct sDamagePlayer
 	int Damage;
 };
 
+struct sDamagePlayerToGame
+{
+	int size;
+	int code;
+	double Damage;
+};
+
 class DamageShop
 {
 

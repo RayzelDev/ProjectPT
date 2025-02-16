@@ -147,7 +147,7 @@ void cSHOW_DMG::MandaDamageProServer(INT64 damage)
 	sDamagePlayer sPacket;
 	sPacket.size = sizeof(sPacket);
 	sPacket.code = PACKET_RECEBE_DAMAGE_CHAR;
-	sPacket.Damage = damage;
+	sPacket.Damage = damage/10;
 	smWsockServer->Send((char*)&sPacket, sPacket.size, TRUE);
 }
 

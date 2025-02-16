@@ -20730,6 +20730,7 @@ pRetry:
 
 			{
 				Vip::GetInstance()->getTimeVip(lpPlayInfo);
+				DamageShop::GetInstance()->SendDamageToGame(lpPlayInfo);
 			}
 
 			{

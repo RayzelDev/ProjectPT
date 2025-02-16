@@ -383,6 +383,7 @@
     <ClCompile Include="Game\Engine\UI\UITooltip.cpp" />
     <ClCompile Include="Game\Engine\UI\UIWindow.cpp" />
     <ClCompile Include="Game\Eventos\Arena.cpp" />
+    <ClCompile Include="Game\Eventos\InterfaceDamage.cpp" />
     <ClCompile Include="Game\Eventos\Invasao.cpp" />
     <ClCompile Include="Game\Eventos\WarMode.cpp" />
     <ClCompile Include="Game\field.cpp" />
@@ -923,6 +924,7 @@
     <ClInclude Include="Game\WinInt\WavIntHttp.h" />
     <ClInclude Include="Game\WinInt\WinIntThread.h" />
     <ClInclude Include="Game\WinInt\ZipLib.h" />
+    <ClInclude Include="Game\Eventos\InterfaceDamage.h" />
     <ClInclude Include="RollDice.h" />
     <ClInclude Include="TCore.h" />
   </ItemGroup>

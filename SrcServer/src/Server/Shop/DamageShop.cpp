@@ -52,18 +52,20 @@ void DamageShop::addDamageToPlayer(rsPLAYINFO* Player, sDamagePlayer* DamagePlay
 			db->Close();
 		}
 	}
+
+	SendDamageToGame(Player);
 }
 
 void DamageShop::SendDamageToGame(rsPLAYINFO* Player)
 {
 	if (Player && Player->lpsmSock)
 	{
-		sDamagePlayer packet;
+		sDamagePlayerToGame packet;
 		ZeroMemory(&packet, sizeof(packet));
 
-		int PlayerDamage = getPlayerDamage(Player);
+		double PlayerDamage = getPlayerDamage(Player);
 
-		packet.size = sizeof(sDamagePlayer);
+		packet.size = sizeof(sDamagePlayerToGame);
 		packet.code = PACKET_SEND_CHARDAMAGE_GAME;
 		packet.Damage = PlayerDamage;
 

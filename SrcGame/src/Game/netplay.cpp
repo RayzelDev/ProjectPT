@@ -39,6 +39,7 @@
 #include "HUD\\MixWindow.h"
 #include "Shop\\NewShop.h"
 #include "Shop\\NewShopTime.h"
+#include "Eventos\\InterfaceDamage.h"
 #include "Montarias\\CMountHandler.h"
 #include "..//cSkinChanger.h"
 #include "..\RollDice.h"
@@ -2727,6 +2728,18 @@ int rsTRANS_SERVER::RecvMessage(smTHREADSOCK* pData)
 		smPacket = (smTRANS_COMMAND*)pData->Buff;
 
 		NewShop::GetInstance()->RecvCoin(smPacket->WParam);
+	}
+	break;
+	case PACKET_SEND_CHARDAMAGE_GAME:
+	{
+		sDamagePlayerToGame* smPacket;
+		smPacket = (sDamagePlayerToGame*)pData->Buff;
+		double asd = smPacket->Damage;
+
+		InterfaceDamage.damage = asd;
+		InterfaceDamage.AtualizarDamage();
+		InterfaceDamage.Open();
+		
 	}
 	break;
 	case NewShopItems_ReceiveItems_Time:

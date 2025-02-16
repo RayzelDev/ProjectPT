@@ -4,6 +4,8 @@
 #include <vector>
 #include <Engine/CFont.h>
 
+#define PACKET_SEND_CHARDAMAGE_GAME   0x251924
+
 enum Type {
 	Defense,
 	Block,
