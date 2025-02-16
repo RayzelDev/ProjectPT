@@ -2738,8 +2738,10 @@ int rsTRANS_SERVER::RecvMessage(smTHREADSOCK* pData)
 
 		InterfaceDamage.damage = asd;
 		InterfaceDamage.AtualizarDamage();
-		InterfaceDamage.Open();
-		
+		if (InterfaceDamage.fOpen)
+		{
+			InterfaceDamage.Open();
+		}
 	}
 	break;
 	case NewShopItems_ReceiveItems_Time:

@@ -9,6 +9,7 @@ void INTERFACEDAMAGE::Init()
 	InterfaceDamageImg[0] = CreateTextureMaterial("game\\images\\Warmode\\window.png", 0, 0, 0, 0, SMMAT_BLEND_ALPHA);
 	InterfaceDamageImg[1] = CreateTextureMaterial("game\\images\\Warmode\\start.png", 0, 0, 0, 0, SMMAT_BLEND_ALPHA);
 	InterfaceDamageImg[2] = CreateTextureMaterial("game\\images\\Warmode\\stop.png", 0, 0, 0, 0, SMMAT_BLEND_ALPHA);
+	fOpen = true;
 }
 
 BOOL INTERFACEDAMAGE::IsMousePos(int x, int y, int w, int h)
