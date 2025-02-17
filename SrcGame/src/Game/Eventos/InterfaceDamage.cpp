@@ -7,8 +7,7 @@ INTERFACEDAMAGE InterfaceDamage;
 void INTERFACEDAMAGE::Init()
 {
 	InterfaceDamageImg[0] = CreateTextureMaterial("game\\images\\damageHUD\\window.png", 0, 0, 0, 0, SMMAT_BLEND_ALPHA);
-	InterfaceDamageImg[1] = CreateTextureMaterial("game\\images\\Warmode\\start.png", 0, 0, 0, 0, SMMAT_BLEND_ALPHA);
-	InterfaceDamageImg[2] = CreateTextureMaterial("game\\images\\Warmode\\stop.png", 0, 0, 0, 0, SMMAT_BLEND_ALPHA);
+	InterfaceDamageImg[1] = CreateTextureMaterial("game\\images\\damageHUD\\Buy.bmp", 0, 0, 0, 0, SMMAT_BLEND_ALPHA);
 	fOpen = true;
 }
 
@@ -27,6 +26,7 @@ void INTERFACEDAMAGE::AtualizarDamage()
 	SIZE size = {};
 
 	DrawImage(InterfaceDamageImg[0], BaseX + 15, BaseY +52, 181, 32);
+	DrawImage(InterfaceDamageImg[1], BaseX + 155, BaseY + 80, 28, 28); 
 	
 	/*wsprintf(szBuff, "Jogador: %s", lpCurPlayer->smCharInfo.szName);
 	GetFontTextExtentPoint(szBuff, strlen(szBuff), &size);
@@ -53,6 +53,7 @@ void INTERFACEDAMAGE::Draw()
 		SIZE size = {};
 
 		DrawImage(InterfaceDamageImg[0], BaseX + 15, BaseY + 52, 181, 32);
+		DrawImage(InterfaceDamageImg[1], BaseX + 155, BaseY + 80, 28, 28);
 
 		/*wsprintf(szBuff, "Jogador: %s", lpCurPlayer->smCharInfo.szName);
 		GetFontTextExtentPoint(szBuff, strlen(szBuff), &size);
