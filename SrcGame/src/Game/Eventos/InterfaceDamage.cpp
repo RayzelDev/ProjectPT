@@ -6,7 +6,7 @@ INTERFACEDAMAGE InterfaceDamage;
 
 void INTERFACEDAMAGE::Init()
 {
-	InterfaceDamageImg[0] = CreateTextureMaterial("game\\images\\Warmode\\window.png", 0, 0, 0, 0, SMMAT_BLEND_ALPHA);
+	InterfaceDamageImg[0] = CreateTextureMaterial("game\\images\\damageHUD\\window.png", 0, 0, 0, 0, SMMAT_BLEND_ALPHA);
 	InterfaceDamageImg[1] = CreateTextureMaterial("game\\images\\Warmode\\start.png", 0, 0, 0, 0, SMMAT_BLEND_ALPHA);
 	InterfaceDamageImg[2] = CreateTextureMaterial("game\\images\\Warmode\\stop.png", 0, 0, 0, 0, SMMAT_BLEND_ALPHA);
 	fOpen = true;
@@ -26,18 +26,18 @@ void INTERFACEDAMAGE::AtualizarDamage()
 	char szBuff[256];
 	SIZE size = {};
 
-	DrawImage(InterfaceDamageImg[0], BaseX, BaseY, 291, 304);
+	DrawImage(InterfaceDamageImg[0], BaseX + 15, BaseY +50, 181, 32);
 	
-	wsprintf(szBuff, "Jogador: %s", lpCurPlayer->smCharInfo.szName);
+	/*wsprintf(szBuff, "Jogador: %s", lpCurPlayer->smCharInfo.szName);
 	GetFontTextExtentPoint(szBuff, strlen(szBuff), &size);
-	dsTextLineOut(BaseX + (131 - size.cx / 2), BaseY + 125, szBuff, strlen(szBuff));
+	dsTextLineOut(BaseX + (131 - size.cx / 2), BaseY + 125, szBuff, strlen(szBuff));*/
 
 	char szTemp[32] = { 0 };
 	NumLineComa64(damage, szTemp);
 
-	wsprintf(szBuff, "Damage: %s", szTemp);
+	wsprintf(szBuff, "%s", szTemp);
 	GetFontTextExtentPoint(szBuff, strlen(szBuff), &size);
-	dsTextLineOut(BaseX + (131 - size.cx / 2), BaseY + 150, szBuff, strlen(szBuff));
+	dsTextLineOut(BaseX + (105 - size.cx / 2), BaseY + 60, szBuff, strlen(szBuff));
 }
 
 void INTERFACEDAMAGE::DrawImage(int Image, int x, int y, int w, int h)
@@ -52,15 +52,15 @@ void INTERFACEDAMAGE::Draw()
 		char szBuff[256];
 		SIZE size = {};
 
-		DrawImage(InterfaceDamageImg[0], BaseX, BaseY, 291, 304);
+		DrawImage(InterfaceDamageImg[0], BaseX + 15, BaseY + 50, 181, 32);
 
-		wsprintf(szBuff, "Jogador: %s", lpCurPlayer->smCharInfo.szName);
+		/*wsprintf(szBuff, "Jogador: %s", lpCurPlayer->smCharInfo.szName);
 		GetFontTextExtentPoint(szBuff, strlen(szBuff), &size);
-		dsTextLineOut(BaseX + (131 - size.cx / 2), BaseY + 125, szBuff, strlen(szBuff));
+		dsTextLineOut(BaseX + (131 - size.cx / 2), BaseY + 125, szBuff, strlen(szBuff));*/
 
-		wsprintf(szBuff, "Damage: %d", damage);
+		wsprintf(szBuff, "%d", damage);
 		GetFontTextExtentPoint(szBuff, strlen(szBuff), &size);
-		dsTextLineOut(BaseX + (131 - size.cx / 2), BaseY + 150, szBuff, strlen(szBuff));
+		dsTextLineOut(BaseX + (105 - size.cx / 2), BaseY + 60, szBuff, strlen(szBuff));
 	}
 }
 

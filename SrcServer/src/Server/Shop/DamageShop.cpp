@@ -33,7 +33,7 @@ double DamageShop::getPlayerDamage(rsPLAYINFO* Player)
 void DamageShop::addDamageToPlayer(rsPLAYINFO* Player, sDamagePlayer* DamagePlayer)
 {
 	auto qtdDamage = getPlayerDamage(Player);
-	if (qtdDamage < 2000000000)
+	if (qtdDamage < 200000000)
 	{
 		auto db = SQLConnection::GetConnection(DATABASEID_UserDB);
 
