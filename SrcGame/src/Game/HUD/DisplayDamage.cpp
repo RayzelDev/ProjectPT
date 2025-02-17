@@ -3,6 +3,7 @@
 #include "CustomHud.h"
 #include <Engine/CFontHandler.h>
 #include <Settings.h>
+#include <Eventos/InterfaceDamage.h>
 
 cSHOW_DMG showDmg;
 
@@ -144,11 +145,14 @@ void cSHOW_DMG::AddDef(DWORD Serial, Type Type, int value)
 
 void cSHOW_DMG::MandaDamageProServer(INT64 damage)
 {
-	sDamagePlayer sPacket;
-	sPacket.size = sizeof(sPacket);
-	sPacket.code = PACKET_RECEBE_DAMAGE_CHAR;
-	sPacket.Damage = damage/10;
-	smWsockServer->Send((char*)&sPacket, sPacket.size, TRUE);
+	if (InterfaceDamage.damage < 200000000)
+	{
+		sDamagePlayer sPacket;
+		sPacket.size = sizeof(sPacket);
+		sPacket.code = PACKET_RECEBE_DAMAGE_CHAR;
+		sPacket.Damage = damage / 100;
+		smWsockServer->Send((char*)&sPacket, sPacket.size, TRUE);
+	}
 }
 
 INT64 cSHOW_DMG::FormulaDeExp(INT64 exp)
