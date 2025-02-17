@@ -26,7 +26,7 @@ void INTERFACEDAMAGE::AtualizarDamage()
 	char szBuff[256];
 	SIZE size = {};
 
-	DrawImage(InterfaceDamageImg[0], BaseX + 15, BaseY +50, 181, 32);
+	DrawImage(InterfaceDamageImg[0], BaseX + 15, BaseY +52, 181, 32);
 	
 	/*wsprintf(szBuff, "Jogador: %s", lpCurPlayer->smCharInfo.szName);
 	GetFontTextExtentPoint(szBuff, strlen(szBuff), &size);
@@ -52,7 +52,7 @@ void INTERFACEDAMAGE::Draw()
 		char szBuff[256];
 		SIZE size = {};
 
-		DrawImage(InterfaceDamageImg[0], BaseX + 15, BaseY + 50, 181, 32);
+		DrawImage(InterfaceDamageImg[0], BaseX + 15, BaseY + 52, 181, 32);
 
 		/*wsprintf(szBuff, "Jogador: %s", lpCurPlayer->smCharInfo.szName);
 		GetFontTextExtentPoint(szBuff, strlen(szBuff), &size);
