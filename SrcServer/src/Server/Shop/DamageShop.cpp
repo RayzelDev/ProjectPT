@@ -12,9 +12,20 @@ double DamageShop::getPlayerDamage(rsPLAYINFO* Player)
 
 	auto db = SQLConnection::GetConnection(DATABASEID_UserDB);
 
+
 	if (db && db->Open())
 	{
+		const char* const queryAdd = "IF NOT EXISTS (SELECT 1 FROM [dbo].[UserDamage] WHERE CharName = ?) BEGIN INSERT INTO[dbo].[UserDamage]([CharName], [Damage]) VALUES(?, 0) END";
 		const char* const query = "SELECT Damage FROM UserDamage WHERE CharName=?";
+
+		if (db->Prepare(queryAdd))
+		{
+			db->BindInputParameter(Player->szName, 1, PARAMTYPE_String);
+			db->BindInputParameter(Player->szName, 2, PARAMTYPE_String);
+
+			if (db->Execute())
+				db->GetData(1, PARAMTYPE_Integer, &result);
+		}
 
 		if (db->Prepare(query))
 		{
